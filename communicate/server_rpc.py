@@ -1,9 +1,20 @@
 from concurrent import futures
 import logging
+import sys
+import os
+import argparse
+
+parser = argparse.ArgumentParser(description='Process some integers.')
+parser.add_argument('--root_dir', metavar='N', type=str, default="../",
+                    help='path for root_dir')
+
+args = parser.parse_args()
+root_directory = os.path.join(os.getcwd(),args.root_dir)
+sys.path.insert(0, args.root_dir)
 
 import grpc
-from communicate.server import Drive_pb2
-from communicate.server import Drive_pb2_grpc
+from server import Drive_pb2
+from server import Drive_pb2_grpc
 from game import test_game
 import random
 import pandas as pd
@@ -32,9 +43,10 @@ isStop_tmp = False
 new_find = False
 calculate_time = None
 calculated_time = None
-player_file = open("../output/player.txt", "w", encoding="utf-8")
+player_file = open(os.path.join(root_directory,"output/player.txt"), "w", encoding="utf-8")
 image_path = ""
 start_nid,end_nid = None, None
+image_files=[]
 
 def get_position(direction, unity_time):
     global data,config,update_data,isStop_tmp,image_path
@@ -70,7 +82,7 @@ class Drive(Drive_pb2_grpc.Drive):
                         if r_veh_id == 447:
                             player_file.write("{}, {}, {}, {}, {}, {}, {}, {} \n".format(int(t), link_id,r_veh_id,r_veh_coord_offset_x,r_veh_coord_offset_y,angle, x2, y2))
                             logger.info("send veh info: {}, {}, {}, {}, {}".format(r_veh_id,r_veh_coord_offset_x,r_veh_coord_offset_y,angle, int(t)))
-                        yield Drive_pb2.Point(id=str(r_veh_id), lon = y2, lat = x2, x = r_veh_coord_offset_x, y= r_veh_coord_offset_y, angle = angle, t=int(t))
+                            yield Drive_pb2.Point(id=str(r_veh_id), lon = y2, lat = x2, x = r_veh_coord_offset_x, y= r_veh_coord_offset_y, angle = angle, t=int(t))
                 else:
                     # calculate_time-=1
                     logger.info("send veh info: id {},x {}, y {}, calculate_time {}".format(-1, -1, -1, int(calculate_time-1)))
@@ -97,9 +109,9 @@ class Drive(Drive_pb2_grpc.Drive):
             return Drive_pb2.StopInfo(isStop=None, t=-1)
 
     def ChangeImage(self, request, context):
-        global calculated_time, calculate_time
+        global calculated_time, calculate_time, image_file
         if calculated_time and calculate_time and (calculate_time - 1 == calculated_time):
-
+            image_files.append(image_path)
             logger.info("request_time: {}, calculated_time {}, calculate_time {}, send driver image: {}".format(request.t, calculated_time, calculate_time, image_path))
             return Drive_pb2.ChangeInfo(image=image_path, t=calculated_time)
         else:
@@ -111,7 +123,8 @@ class Drive(Drive_pb2_grpc.Drive):
         agent_id = 447
         startPoint = (request.x1, request.y1)
         endPoint = (request.x2, request.y2)
-        nodes_df = pd.read_csv("../projects/bolinas/network_inputs/bolinas_nodes_sim.csv")
+        logger.info("get start and end points")
+        nodes_df = pd.read_csv(os.path.join(args.root_dir,"projects/bolinas/network_inputs/bolinas_nodes_sim.csv"))
         nodes_df = gpd.GeoDataFrame(nodes_df, crs='epsg:4326', geometry=[Point(x, y) for (x, y) in zip(nodes_df.lon, nodes_df.lat)]).to_crs('epsg:26910')
         nodes_df['x'] = nodes_df['geometry'].apply(lambda x: x.x)
         nodes_df['y'] = nodes_df['geometry'].apply(lambda x: x.y)
@@ -140,7 +153,7 @@ def serve():
     server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
     Drive_pb2_grpc.add_DriveServicer_to_server(Drive(), server)
     server.add_insecure_port('[::]:50051')
-    data, config, update_data = test_game.initialize()
+    data, config, update_data = test_game.initialize(logger)
     server.start()
     server.wait_for_termination()
 
@@ -150,3 +163,7 @@ if __name__ == "__main__":
     logger = get_logger('root')
     player_file.write("t,link_id,car_id,x,y,heading,lat,lon")
     serve()
+    image_file = open("../output/image_path.txt", "w", encoding="utf-8")
+    for i in image_files:
+        image_file.write(i)
+

@@ -1,311 +1,451 @@
-2021-10-05 18:16:53,720 - r0_fire1_comm1_vphh2_vistor300_contra0_close0mflame_shelter0
-2021-10-05 18:16:54,279 - total numbers of agents taken 1490
-2021-10-05 18:18:18,169 - get direction: 
-2021-10-05 18:18:18,173 - start calculating positions...unity_time:0, calculating_time:0
-2021-10-05 18:18:18,244 - send veh info: id -2,x -2, y -2, calculate_time 0
-2021-10-05 18:18:18,298 - send veh info: id -2,x -1, y -1, calculate_time 0
-2021-10-05 18:18:18,299 - get direction: 
-2021-10-05 18:18:18,299 - start calculating positions...unity_time:0, calculating_time:0
-2021-10-05 18:18:18,319 - send veh info: id -2,x -2, y -2, calculate_time 0
-2021-10-05 18:18:18,387 - send veh info: id -2,x -2, y -2, calculate_time 0
-2021-10-05 18:18:18,404 - send veh info: id -2,x -1, y -1, calculate_time 0
-2021-10-05 18:18:18,420 - get direction: 
-2021-10-05 18:18:18,421 - start calculating positions...unity_time:0, calculating_time:0
-2021-10-05 18:18:18,482 - send veh info: id -2,x -2, y -2, calculate_time 0
-2021-10-05 18:18:18,505 - send veh info: id -2,x -2, y -2, calculate_time 0
-2021-10-05 18:18:18,519 - send veh info: id -2,x -1, y -1, calculate_time 0
-2021-10-05 18:18:18,522 - get direction: 
-2021-10-05 18:18:18,522 - start calculating positions...unity_time:0, calculating_time:0
-2021-10-05 18:18:18,554 - send veh info: id -2,x -2, y -2, calculate_time 0
-2021-10-05 18:18:18,583 - send veh info: id -2,x -2, y -2, calculate_time 0
-2021-10-05 18:18:18,603 - send veh info: id -2,x -2, y -2, calculate_time 0
-2021-10-05 18:18:18,622 - send veh info: id -2,x -2, y -2, calculate_time 0
-2021-10-05 18:18:18,639 - send veh info: id -2,x -2, y -2, calculate_time 0
-2021-10-05 18:18:18,664 - send veh info: id -2,x -2, y -2, calculate_time 0
-2021-10-05 18:18:18,685 - send veh info: id -2,x -2, y -2, calculate_time 0
-2021-10-05 18:18:18,707 - send veh info: id -2,x -2, y -2, calculate_time 0
-2021-10-05 18:18:18,736 - send veh info: id -2,x -1, y -1, calculate_time 0
-2021-10-05 18:18:18,755 - get direction: 
-2021-10-05 18:18:18,755 - start calculating positions...unity_time:0, calculating_time:0
-2021-10-05 18:18:18,797 - send veh info: id -2,x -2, y -2, calculate_time 0
-2021-10-05 18:18:18,820 - send veh info: id -2,x -2, y -2, calculate_time 0
-2021-10-05 18:18:18,836 - send veh info: id -2,x -2, y -2, calculate_time 0
-2021-10-05 18:18:18,855 - send veh info: id -2,x -2, y -2, calculate_time 0
-2021-10-05 18:18:18,882 - send veh info: id -2,x -2, y -2, calculate_time 0
-2021-10-05 18:18:18,906 - send veh info: id -2,x -1, y -1, calculate_time 0
-2021-10-05 18:18:18,915 - get direction: 
-2021-10-05 18:18:18,915 - start calculating positions...unity_time:0, calculating_time:0
-2021-10-05 18:18:18,948 - send veh info: id -2,x -2, y -2, calculate_time 0
-2021-10-05 18:18:18,967 - send veh info: id -2,x -2, y -2, calculate_time 0
-2021-10-05 18:18:18,978 - send veh info: id -2,x -2, y -2, calculate_time 0
-2021-10-05 18:18:18,994 - send veh info: id -2,x -2, y -2, calculate_time 0
-2021-10-05 18:18:19,033 - send veh info: id -2,x -2, y -2, calculate_time 0
-2021-10-05 18:18:19,071 - send veh info: id -2,x -1, y -1, calculate_time 0
-2021-10-05 18:18:19,075 - get direction: 
-2021-10-05 18:18:19,075 - start calculating positions...unity_time:0, calculating_time:0
-2021-10-05 18:18:19,103 - send veh info: id -2,x -2, y -2, calculate_time 0
-2021-10-05 18:18:19,137 - send veh info: id -2,x -2, y -2, calculate_time 0
-2021-10-05 18:18:19,164 - send veh info: id -2,x -2, y -2, calculate_time 0
-2021-10-05 18:18:19,186 - send veh info: id -2,x -2, y -2, calculate_time 0
-2021-10-05 18:18:19,207 - send veh info: id -2,x -2, y -2, calculate_time 0
-2021-10-05 18:18:19,228 - send veh info: id -2,x -2, y -2, calculate_time 0
-2021-10-05 18:18:19,252 - send veh info: id -2,x -2, y -2, calculate_time 0
-2021-10-05 18:18:19,260 - send veh info: id -2,x -1, y -1, calculate_time 0
-2021-10-05 18:18:19,271 - get direction: 
-2021-10-05 18:18:19,271 - start calculating positions...unity_time:0, calculating_time:0
-2021-10-05 18:18:19,296 - send veh info: id -2,x -2, y -2, calculate_time 0
-2021-10-05 18:18:19,322 - send veh info: id -2,x -2, y -2, calculate_time 0
-2021-10-05 18:18:19,341 - send veh info: id -2,x -2, y -2, calculate_time 0
-2021-10-05 18:18:19,363 - send veh info: id -2,x -2, y -2, calculate_time 0
-2021-10-05 18:18:19,392 - send veh info: id -2,x -2, y -2, calculate_time 0
-2021-10-05 18:18:19,416 - send veh info: id -2,x -2, y -2, calculate_time 0
-2021-10-05 18:18:19,435 - send veh info: id -2,x -2, y -2, calculate_time 0
-2021-10-05 18:18:19,451 - send veh info: id -2,x -2, y -2, calculate_time 0
-2021-10-05 18:18:19,454 - send veh info: id -2,x -1, y -1, calculate_time 0
-2021-10-05 18:18:19,466 - get direction: 
-2021-10-05 18:18:19,467 - start calculating positions...unity_time:0, calculating_time:0
-2021-10-05 18:18:19,484 - send veh info: id -2,x -2, y -2, calculate_time 0
-2021-10-05 18:18:19,915 - t: 1, start node id: 1
-2021-10-05 18:18:19,916 - t: 1, end node id: 130
-2021-10-05 18:18:19,916 - agent' s departure time: 1
-2021-10-05 18:18:19,922 - get direction: 
-2021-10-05 18:18:19,922 - start calculating positions...unity_time:1, calculating_time:1
-2021-10-05 18:18:19,925 - {'forward': (105, 9.242376782605044), 'left': (89, -85.34199766871612), 'right': None, 'back': (106, -170.9838669740351)}
-2021-10-05 18:18:19,925 - driver's system decision: 106
-2021-10-05 18:18:19,925 - time: 1, current link is n1_vl, next link is 106
-2021-10-05 18:18:19,927 - t:1, current link n1_vl' s queue_vehicles: [], next link 106' s queue_vehicles: []
-2021-10-05 18:18:19,927 - t:1, current link n1_vl' s run_vehicles: [447], next link 106' s run_vehicles: []
-2021-10-05 18:18:19,945 - send veh info: id -2,x -2, y -2, calculate_time 1
-2021-10-05 18:18:20,052 - end calculating positions, whole_vehs at calculating time: 1, num_vehs: 0
-2021-10-05 18:18:20,053 - send veh info: id -1,x -1, y -1, calculate_time 1
-2021-10-05 18:18:20,053 - request_time: 1, calculated_time 1, calculate_time 2, vehicle needs stop? False
-2021-10-05 18:18:20,054 - request_time: 1, calculated_time 1, calculate_time 2, send driver image: 
-2021-10-05 18:18:20,067 - send veh info: id -2,x -2, y -2, calculate_time 1
-2021-10-05 18:18:20,081 - send veh info: id -2,x -2, y -2, calculate_time 1
-2021-10-05 18:18:20,084 - request_time: 1, calculated_time 1, calculate_time 2, vehicle needs stop? False
-2021-10-05 18:18:20,085 - request_time: 1, calculated_time 1, calculate_time 2, send driver image: 
-2021-10-05 18:18:20,086 - request_time: 2, calculated_time 1, calculate_time 2, vehicle needs stop? False
-2021-10-05 18:18:20,088 - request_time: 2, calculated_time 1, calculate_time 2, send driver image: 
-2021-10-05 18:18:20,094 - {'forward': (105, 9.242376782605044), 'left': (89, -85.34199766871612), 'right': None, 'back': (106, -170.9838669740351)}
-2021-10-05 18:18:20,094 - driver's system decision: 106
-2021-10-05 18:18:20,094 - time: 0, current link is n1_vl, next link is 106
-2021-10-05 18:18:20,096 - t:0, current link n1_vl' s queue_vehicles: [], next link 106' s queue_vehicles: []
-2021-10-05 18:18:20,096 - t:0, current link n1_vl' s run_vehicles: [447], next link 106' s run_vehicles: []
-2021-10-05 18:18:20,130 - get direction: 
-2021-10-05 18:18:20,130 - start calculating positions...unity_time:2, calculating_time:2
-2021-10-05 18:18:20,216 - {'forward': (105, 9.242376782605044), 'left': (89, -85.34199766871612), 'right': None, 'back': (106, -170.9838669740351)}
-2021-10-05 18:18:20,216 - driver's system decision: 106
-2021-10-05 18:18:20,216 - time: 2, current link is n1_vl, next link is 106
-2021-10-05 18:18:20,221 - end calculating positions, whole_vehs at calculating time: 2, num_vehs: 0
-2021-10-05 18:18:20,223 - t:2, current link n1_vl' s queue_vehicles: [], next link 106' s queue_vehicles: []
-2021-10-05 18:18:20,224 - send veh info: id -1,x -1, y -1, calculate_time 2
-2021-10-05 18:18:20,224 - t:2, current link n1_vl' s run_vehicles: [], next link 106' s run_vehicles: [447]
-2021-10-05 18:18:20,334 - send veh info: id -2,x -2, y -2, calculate_time 2
-2021-10-05 18:18:20,344 - end calculating positions, whole_vehs at calculating time: 2, num_vehs: 1
-2021-10-05 18:18:20,344 - send veh info: 447, 106.0, 525372.1252058807, 4194893.969579211, 35.897184738434724, 2, -122.71140183967442, 37.90121504239249
-2021-10-05 18:18:20,344 - send veh info: 447, 525372.1252058807, 4194893.969579211, 35.897184738434724, 2
-2021-10-05 18:18:20,351 - send veh info: id -2,x -2, y -2, calculate_time 2
-2021-10-05 18:18:20,352 - request_time: 3, calculated_time 2, calculate_time 3, vehicle needs stop? False
-2021-10-05 18:18:20,353 - request_time: 3, calculated_time 2, calculate_time 3, send driver image: 106/p0_-122.7114504_37.9012068.jpg
-2021-10-05 18:18:20,386 - get direction: 
-2021-10-05 18:18:20,386 - start calculating positions...unity_time:3, calculating_time:3
-2021-10-05 18:18:20,388 - {'forward': (108, -1.9788644077252764), 'left': None, 'right': (36, 89.91643736034622), 'back': (107, -179.90870138657237)}
-2021-10-05 18:18:20,388 - driver's system decision: 108
-2021-10-05 18:18:20,388 - time: 3, current link is 106, next link is 108
-2021-10-05 18:18:20,393 - t:3, current link 106' s queue_vehicles: [], next link 108' s queue_vehicles: []
-2021-10-05 18:18:20,393 - t:3, current link 106' s run_vehicles: [447], next link 108' s run_vehicles: []
-2021-10-05 18:18:20,513 - end calculating positions, whole_vehs at calculating time: 3, num_vehs: 1
-2021-10-05 18:18:20,514 - send veh info: 447, 106.0, 525377.9430941413, 4194898.180592319, 35.897184751792445, 3, -122.71133551596374, 37.90125283371904
-2021-10-05 18:18:20,514 - send veh info: 447, 525377.9430941413, 4194898.180592319, 35.897184751792445, 3
-2021-10-05 18:18:20,514 - request_time: 3, calculated_time 3, calculate_time 4, send driver image: 106/p1_-122.71139499083974_37.90123837162228.jpg
-2021-10-05 18:18:20,516 - request_time: 4, calculated_time 3, calculate_time 4, vehicle needs stop? False
-2021-10-05 18:18:20,517 - request_time: 4, calculated_time 3, calculate_time 4, send driver image: 106/p1_-122.71139499083974_37.90123837162228.jpg
-2021-10-05 18:18:20,536 - get direction: 
-2021-10-05 18:18:20,536 - start calculating positions...unity_time:4, calculating_time:4
-2021-10-05 18:18:20,539 - {'forward': (108, -1.9788644077252764), 'left': None, 'right': (36, 89.91643736034622), 'back': (107, -179.90870138657237)}
-2021-10-05 18:18:20,539 - driver's system decision: 108
-2021-10-05 18:18:20,539 - time: 4, current link is 106, next link is 108
-2021-10-05 18:18:20,541 - t:4, current link 106' s queue_vehicles: [], next link 108' s queue_vehicles: []
-2021-10-05 18:18:20,542 - t:4, current link 106' s run_vehicles: [447], next link 108' s run_vehicles: []
-2021-10-05 18:18:20,660 - end calculating positions, whole_vehs at calculating time: 4, num_vehs: 1
-2021-10-05 18:18:20,660 - send veh info: 447, 106.0, 525387.0012642054, 4194904.736935641, 35.897184738434724, 4, -122.71123225302573, 37.90131167290751
-2021-10-05 18:18:20,660 - send veh info: 447, 525387.0012642054, 4194904.736935641, 35.897184738434724, 4
-2021-10-05 18:18:20,661 - request_time: 4, calculated_time 4, calculate_time 5, send driver image: 106/p3_-122.71128417251919_37.90130151486684.jpg
-2021-10-05 18:18:20,684 - send veh info: id -2,x -2, y -2, calculate_time 4
-2021-10-05 18:18:20,688 - request_time: 5, calculated_time 4, calculate_time 5, vehicle needs stop? False
-2021-10-05 18:18:20,689 - request_time: 5, calculated_time 4, calculate_time 5, send driver image: 106/p3_-122.71128417251919_37.90130151486684.jpg
-2021-10-05 18:18:20,702 - get direction: 
-2021-10-05 18:18:20,702 - start calculating positions...unity_time:5, calculating_time:5
-2021-10-05 18:18:20,704 - {'forward': (108, -1.9788644077252764), 'left': None, 'right': (36, 89.91643736034622), 'back': (107, -179.90870138657237)}
-2021-10-05 18:18:20,704 - driver's system decision: 108
-2021-10-05 18:18:20,704 - time: 5, current link is 106, next link is 108
-2021-10-05 18:18:20,706 - t:5, current link 106' s queue_vehicles: [], next link 108' s queue_vehicles: []
-2021-10-05 18:18:20,706 - t:5, current link 106' s run_vehicles: [447], next link 108' s run_vehicles: []
-2021-10-05 18:18:20,820 - end calculating positions, whole_vehs at calculating time: 5, num_vehs: 1
-2021-10-05 18:18:20,820 - send veh info: 447, 106.0, 525396.0594342698, 4194911.293278963, 35.897184738434724, 5, -122.71112898992358, 37.901370512004156
-2021-10-05 18:18:20,821 - send veh info: 447, 525396.0594342698, 4194911.293278963, 35.897184738434724, 5
-2021-10-05 18:18:20,822 - request_time: 6, calculated_time 5, calculate_time 6, send driver image: 106/p5_-122.71117335419864_37.9013646581114.jpg
-2021-10-05 18:18:20,823 - request_time: 6, calculated_time 5, calculate_time 6, vehicle needs stop? False
-2021-10-05 18:18:20,824 - request_time: 6, calculated_time 5, calculate_time 6, send driver image: 106/p5_-122.71117335419864_37.9013646581114.jpg
-2021-10-05 18:18:20,844 - get direction: 
-2021-10-05 18:18:20,844 - start calculating positions...unity_time:6, calculating_time:6
-2021-10-05 18:18:20,846 - {'forward': (108, -1.9788644077252764), 'left': None, 'right': (36, 89.91643736034622), 'back': (107, -179.90870138657237)}
-2021-10-05 18:18:20,846 - driver's system decision: 108
-2021-10-05 18:18:20,846 - time: 6, current link is 106, next link is 108
-2021-10-05 18:18:20,849 - t:6, current link 106' s queue_vehicles: [], next link 108' s queue_vehicles: []
-2021-10-05 18:18:20,849 - t:6, current link 106' s run_vehicles: [447], next link 108' s run_vehicles: []
-2021-10-05 18:18:20,966 - end calculating positions, whole_vehs at calculating time: 6, num_vehs: 1
-2021-10-05 18:18:20,966 - send veh info: 447, 106.0, 525405.1176043379, 4194917.849622289, 35.897184886073795, 6, -122.71102572665724, 37.90142935100896
-2021-10-05 18:18:20,967 - send veh info: 447, 525405.1176043379, 4194917.849622289, 35.897184886073795, 6
-2021-10-05 18:18:20,967 - send veh info: id -2,x -2, y -2, calculate_time 6
-2021-10-05 18:18:20,967 - request_time: 7, calculated_time 6, calculate_time 7, vehicle needs stop? False
-2021-10-05 18:18:20,968 - request_time: 7, calculated_time 6, calculate_time 7, send driver image: 106/p7_-122.71106253587809_37.90142780135595.jpg
-2021-10-05 18:18:20,989 - get direction: 
-2021-10-05 18:18:20,989 - start calculating positions...unity_time:7, calculating_time:7
-2021-10-05 18:18:20,991 - {'forward': (108, -1.9788644077252764), 'left': None, 'right': (36, 89.91643736034622), 'back': (107, -179.90870138657237)}
-2021-10-05 18:18:20,991 - driver's system decision: 108
-2021-10-05 18:18:20,991 - time: 7, current link is 106, next link is 108
-2021-10-05 18:18:20,994 - t:7, current link 106' s queue_vehicles: [], next link 108' s queue_vehicles: []
-2021-10-05 18:18:20,994 - t:7, current link 106' s run_vehicles: [447], next link 108' s run_vehicles: []
-2021-10-05 18:18:21,111 - end calculating positions, whole_vehs at calculating time: 7, num_vehs: 1
-2021-10-05 18:18:21,111 - send veh info: id -2,x -2, y -2, calculate_time 7
-2021-10-05 18:18:21,112 - send veh info: 447, 106.0, 525414.1757743985, 4194924.405965609, 35.897184738434724, 7, -122.71092246322684, 37.901488189921864
-2021-10-05 18:18:21,112 - request_time: 8, calculated_time 7, calculate_time 8, vehicle needs stop? False
-2021-10-05 18:18:21,112 - send veh info: 447, 525414.1757743985, 4194924.405965609, 35.897184738434724, 7
-2021-10-05 18:18:21,114 - request_time: 8, calculated_time 7, calculate_time 8, send driver image: 106/p9_-122.71095171755753_37.90149094460051.jpg
-2021-10-05 18:18:21,115 - request_time: 8, calculated_time 7, calculate_time 8, vehicle needs stop? False
-2021-10-05 18:18:21,116 - request_time: 8, calculated_time 7, calculate_time 8, send driver image: 106/p9_-122.71095171755753_37.90149094460051.jpg
-2021-10-05 18:18:21,136 - get direction: 
-2021-10-05 18:18:21,136 - start calculating positions...unity_time:8, calculating_time:8
-2021-10-05 18:18:21,138 - {'forward': (108, -1.9788644077252764), 'left': None, 'right': (36, 89.91643736034622), 'back': (107, -179.90870138657237)}
-2021-10-05 18:18:21,138 - driver's system decision: 108
-2021-10-05 18:18:21,138 - time: 8, current link is 106, next link is 108
-2021-10-05 18:18:21,141 - t:8, current link 106' s queue_vehicles: [], next link 108' s queue_vehicles: []
-2021-10-05 18:18:21,141 - t:8, current link 106' s run_vehicles: [447], next link 108' s run_vehicles: []
-2021-10-05 18:18:21,171 - send veh info: id -2,x -2, y -2, calculate_time 8
-2021-10-05 18:18:21,251 - end calculating positions, whole_vehs at calculating time: 8, num_vehs: 1
-2021-10-05 18:18:21,252 - send veh info: 447, 106.0, 525423.2339444628, 4194930.962308931, 35.897184738434724, 8, -122.71081919963225, 37.901547028742954
-2021-10-05 18:18:21,252 - send veh info: 447, 525423.2339444628, 4194930.962308931, 35.897184738434724, 8
-2021-10-05 18:18:21,252 - request_time: 8, calculated_time 8, calculate_time 9, send driver image: 106/p11_-122.71084089923698_37.90155408784507.jpg
-2021-10-05 18:18:21,254 - request_time: 9, calculated_time 8, calculate_time 9, vehicle needs stop? False
-2021-10-05 18:18:21,254 - request_time: 9, calculated_time 8, calculate_time 9, send driver image: 106/p11_-122.71084089923698_37.90155408784507.jpg
-2021-10-05 18:18:21,267 - get direction: 
-2021-10-05 18:18:21,267 - start calculating positions...unity_time:9, calculating_time:9
-2021-10-05 18:18:21,269 - {'forward': (108, -1.9788644077252764), 'left': None, 'right': (36, 89.91643736034622), 'back': (107, -179.90870138657237)}
-2021-10-05 18:18:21,269 - driver's system decision: 108
-2021-10-05 18:18:21,269 - time: 9, current link is 106, next link is 108
-2021-10-05 18:18:21,271 - t:9, current link 106' s queue_vehicles: [], next link 108' s queue_vehicles: []
-2021-10-05 18:18:21,271 - t:9, current link 106' s run_vehicles: [447], next link 108' s run_vehicles: []
-2021-10-05 18:18:21,383 - send veh info: id -2,x -2, y -2, calculate_time 9
-2021-10-05 18:18:21,386 - end calculating positions, whole_vehs at calculating time: 9, num_vehs: 1
-2021-10-05 18:18:21,387 - request_time: 9, calculated_time 9, calculate_time 10, vehicle needs stop? False
-2021-10-05 18:18:21,387 - send veh info: 447, 106.0, 525432.2921145275, 4194937.518652255, 35.897184751792445, 9, -122.71071593587351, 37.90160586747218
-2021-10-05 18:18:21,388 - send veh info: 447, 525432.2921145275, 4194937.518652255, 35.897184751792445, 9
-2021-10-05 18:18:21,389 - request_time: 9, calculated_time 9, calculate_time 10, send driver image: 106/p13_-122.71073008091643_37.90161723108963.jpg
-2021-10-05 18:18:21,390 - request_time: 10, calculated_time 9, calculate_time 10, vehicle needs stop? False
-2021-10-05 18:18:21,392 - request_time: 10, calculated_time 9, calculate_time 10, send driver image: 106/p13_-122.71073008091643_37.90161723108963.jpg
-2021-10-05 18:18:21,407 - get direction: 
-2021-10-05 18:18:21,407 - start calculating positions...unity_time:10, calculating_time:10
-2021-10-05 18:18:21,410 - {'forward': (108, -1.9788644077252764), 'left': None, 'right': (36, 89.91643736034622), 'back': (107, -179.90870138657237)}
-2021-10-05 18:18:21,410 - driver's system decision: 108
-2021-10-05 18:18:21,410 - time: 10, current link is 106, next link is 108
-2021-10-05 18:18:21,412 - t:10, current link 106' s queue_vehicles: [], next link 108' s queue_vehicles: []
-2021-10-05 18:18:21,412 - t:10, current link 106' s run_vehicles: [447], next link 108' s run_vehicles: []
-2021-10-05 18:18:21,520 - send veh info: id -2,x -2, y -2, calculate_time 10
-2021-10-05 18:18:21,526 - end calculating positions, whole_vehs at calculating time: 10, num_vehs: 1
-2021-10-05 18:18:21,526 - send veh info: 447, 106.0, 525441.3502845919, 4194944.074995577, 35.897184751792445, 10, -122.71061267195063, 37.901664706109564
-2021-10-05 18:18:21,527 - request_time: 10, calculated_time 10, calculate_time 11, send driver image: 106/p14_-122.71067467175617_37.90164880271191.jpg
-2021-10-05 18:18:21,527 - send veh info: 447, 525441.3502845919, 4194944.074995577, 35.897184751792445, 10
-2021-10-05 18:18:21,528 - request_time: 11, calculated_time 10, calculate_time 11, vehicle needs stop? False
-2021-10-05 18:18:21,529 - request_time: 11, calculated_time 10, calculate_time 11, send driver image: 106/p14_-122.71067467175617_37.90164880271191.jpg
-2021-10-05 18:18:21,549 - get direction: 
-2021-10-05 18:18:21,549 - start calculating positions...unity_time:11, calculating_time:11
-2021-10-05 18:18:21,551 - {'forward': (108, -1.9788644077252764), 'left': None, 'right': (36, 89.91643736034622), 'back': (107, -179.90870138657237)}
-2021-10-05 18:18:21,551 - driver's system decision: 108
-2021-10-05 18:18:21,551 - time: 11, current link is 106, next link is 108
-2021-10-05 18:18:21,554 - t:11, current link 106' s queue_vehicles: [], next link 108' s queue_vehicles: []
-2021-10-05 18:18:21,554 - t:11, current link 106' s run_vehicles: [447], next link 108' s run_vehicles: []
-2021-10-05 18:18:21,667 - send veh info: id -2,x -2, y -2, calculate_time 11
-2021-10-05 18:18:21,672 - end calculating positions, whole_vehs at calculating time: 11, num_vehs: 1
-2021-10-05 18:18:21,673 - send veh info: 447, 106.0, 525450.4084546563, 4194950.631338902, 35.897184751792445, 11, -122.7105094078636, 37.901723544655106
-2021-10-05 18:18:21,673 - send veh info: 447, 525450.4084546563, 4194950.631338902, 35.897184751792445, 11
-2021-10-05 18:18:21,674 - request_time: 11, calculated_time 11, calculate_time 12, send driver image: 106/p16_-122.71056385343562_37.90171194595647.jpg
-2021-10-05 18:18:21,675 - request_time: 12, calculated_time 11, calculate_time 12, vehicle needs stop? False
-2021-10-05 18:18:21,676 - request_time: 12, calculated_time 11, calculate_time 12, send driver image: 106/p16_-122.71056385343562_37.90171194595647.jpg
-2021-10-05 18:18:21,692 - get direction: 
-2021-10-05 18:18:21,692 - start calculating positions...unity_time:12, calculating_time:12
-2021-10-05 18:18:21,694 - {'forward': (108, -1.9788644077252764), 'left': None, 'right': (36, 89.91643736034622), 'back': (107, -179.90870138657237)}
-2021-10-05 18:18:21,694 - driver's system decision: 108
-2021-10-05 18:18:21,694 - time: 12, current link is 106, next link is 108
-2021-10-05 18:18:21,697 - t:12, current link 106' s queue_vehicles: [], next link 108' s queue_vehicles: []
-2021-10-05 18:18:21,697 - t:12, current link 106' s run_vehicles: [447], next link 108' s run_vehicles: []
-2021-10-05 18:18:21,806 - send veh info: id -2,x -2, y -2, calculate_time 12
-2021-10-05 18:18:21,810 - end calculating positions, whole_vehs at calculating time: 12, num_vehs: 1
-2021-10-05 18:18:21,811 - send veh info: 447, 106.0, 525459.4666247203, 4194957.1876822235, 35.897184738434724, 12, -122.71040614361243, 37.90178238310877
-2021-10-05 18:18:21,811 - request_time: 12, calculated_time 12, calculate_time 13, send driver image: 106/p18_-122.71045303511507_37.901775089201024.jpg
-2021-10-05 18:18:21,811 - send veh info: 447, 525459.4666247203, 4194957.1876822235, 35.897184738434724, 12
-2021-10-05 18:18:21,813 - request_time: 13, calculated_time 12, calculate_time 13, vehicle needs stop? False
-2021-10-05 18:18:21,814 - request_time: 13, calculated_time 12, calculate_time 13, send driver image: 106/p18_-122.71045303511507_37.901775089201024.jpg
-2021-10-05 18:18:21,832 - get direction: 
-2021-10-05 18:18:21,832 - start calculating positions...unity_time:13, calculating_time:13
-2021-10-05 18:18:21,834 - {'forward': (108, -1.9788644077252764), 'left': None, 'right': (36, 89.91643736034622), 'back': (107, -179.90870138657237)}
-2021-10-05 18:18:21,834 - driver's system decision: 108
-2021-10-05 18:18:21,834 - time: 13, current link is 106, next link is 108
-2021-10-05 18:18:21,838 - t:13, current link 106' s queue_vehicles: [], next link 108' s queue_vehicles: []
-2021-10-05 18:18:21,838 - t:13, current link 106' s run_vehicles: [447], next link 108' s run_vehicles: []
-2021-10-05 18:18:21,854 - send veh info: id -2,x -2, y -2, calculate_time 13
-2021-10-05 18:18:21,953 - end calculating positions, whole_vehs at calculating time: 13, num_vehs: 1
-2021-10-05 18:18:21,953 - send veh info: 447, 106.0, 525468.5247947846, 4194963.744025546, 35.897184738434724, 13, -122.71030287919712, 37.90184122147059
-2021-10-05 18:18:21,953 - request_time: 13, calculated_time 13, calculate_time 14, send driver image: 106/p20_-122.71034221679452_37.901838232445584.jpg
-2021-10-05 18:18:21,954 - send veh info: 447, 525468.5247947846, 4194963.744025546, 35.897184738434724, 13
-2021-10-05 18:18:21,955 - request_time: 14, calculated_time 13, calculate_time 14, vehicle needs stop? False
-2021-10-05 18:18:21,956 - request_time: 14, calculated_time 13, calculate_time 14, send driver image: 106/p20_-122.71034221679452_37.901838232445584.jpg
-2021-10-05 18:18:21,978 - get direction: 
-2021-10-05 18:18:21,978 - start calculating positions...unity_time:14, calculating_time:14
-2021-10-05 18:18:21,981 - {'forward': (108, -1.9788644077252764), 'left': None, 'right': (36, 89.91643736034622), 'back': (107, -179.90870138657237)}
-2021-10-05 18:18:21,981 - driver's system decision: 108
-2021-10-05 18:18:21,981 - time: 14, current link is 106, next link is 108
-2021-10-05 18:18:21,985 - t:14, current link 106' s queue_vehicles: [], next link 108' s queue_vehicles: []
-2021-10-05 18:18:21,985 - t:14, current link 106' s run_vehicles: [447, 62], next link 108' s run_vehicles: []
-2021-10-05 18:18:22,091 - send veh info: id -2,x -2, y -2, calculate_time 14
-2021-10-05 18:18:22,095 - end calculating positions, whole_vehs at calculating time: 14, num_vehs: 2
-2021-10-05 18:18:22,096 - send veh info: 447, 106.0, 525477.582964849, 4194970.300368869, 35.897184738434724, 14, -122.71019961461766, 37.901900059740555
-2021-10-05 18:18:22,096 - send veh info: 447, 525477.582964849, 4194970.300368869, 35.897184738434724, 14
-2021-10-05 18:18:22,097 - request_time: 15, calculated_time 14, calculate_time 15, vehicle needs stop? False
-2021-10-05 18:18:22,097 - send veh info: 62, 106.0, 525372.1252058807, 4194893.969579211, 35.897184738434724, 14, -122.71140183967442, 37.90121504239249
-2021-10-05 18:18:22,097 - request_time: 15, calculated_time 14, calculate_time 15, send driver image: 106/p22_-122.71023139847397_37.901901375690144.jpg
-2021-10-05 18:18:22,115 - get direction: 
-2021-10-05 18:18:22,115 - start calculating positions...unity_time:15, calculating_time:15
-2021-10-05 18:18:22,117 - {'forward': (108, -1.9788644077252764), 'left': None, 'right': (36, 89.91643736034622), 'back': (107, -179.90870138657237)}
-2021-10-05 18:18:22,117 - driver's system decision: 108
-2021-10-05 18:18:22,117 - time: 15, current link is 106, next link is 108
-2021-10-05 18:18:22,120 - t:15, current link 106' s queue_vehicles: [], next link 108' s queue_vehicles: []
-2021-10-05 18:18:22,120 - t:15, current link 106' s run_vehicles: [447, 62], next link 108' s run_vehicles: [85]
-2021-10-05 18:18:22,229 - send veh info: id -2,x -2, y -2, calculate_time 15
-2021-10-05 18:18:22,234 - end calculating positions, whole_vehs at calculating time: 15, num_vehs: 3
-2021-10-05 18:18:22,234 - request_time: 15, calculated_time 15, calculate_time 16, send driver image: 106/p23_-122.7101759893137_37.901932947312424.jpg
-2021-10-05 18:18:22,235 - send veh info: 85, 108.0, 525490.6776344529, 4194979.950056736, 37.87504592317614, 15, -122.71005032693941, 37.90198666494059
-2021-10-05 18:18:22,236 - send veh info: 447, 106.0, 525484.2316308457, 4194975.112702553, 35.897184738434724, 15, -122.71012381866335, 37.901943246771985
-2021-10-05 18:18:22,236 - send veh info: 447, 525484.2316308457, 4194975.112702553, 35.897184738434724, 15
-2021-10-05 18:18:22,236 - send veh info: 62, 106.0, 525377.9430941413, 4194898.180592319, 35.897184751792445, 15, -122.71133551596374, 37.90125283371904
-2021-10-05 18:18:22,260 - send veh info: id -2,x -2, y -2, calculate_time 15
-2021-10-05 18:18:22,267 - request_time: 16, calculated_time 15, calculate_time 16, vehicle needs stop? False
-2021-10-05 18:18:22,268 - request_time: 16, calculated_time 15, calculate_time 16, send driver image: 106/p23_-122.7101759893137_37.901932947312424.jpg
-2021-10-05 18:18:22,282 - get direction: 
-2021-10-05 18:18:22,282 - start calculating positions...unity_time:16, calculating_time:16
-2021-10-05 18:18:22,285 - {'forward': (108, -1.9788644077252764), 'left': None, 'right': (36, 89.91643736034622), 'back': (107, -179.90870138657237)}
-2021-10-05 18:18:22,285 - driver's system decision: 108
-2021-10-05 18:18:22,285 - time: 16, current link is 106, next link is 108
-2021-10-05 18:18:22,288 - t:16, current link 106' s queue_vehicles: [447], next link 108' s queue_vehicles: []
-2021-10-05 18:18:22,288 - t:16, current link 106' s run_vehicles: [62], next link 108' s run_vehicles: [85]
-2021-10-05 18:18:22,395 - queue_vehicles: [447], in the first of queue, need stop!
-2021-10-05 18:18:22,399 - end calculating positions, whole_vehs at calculating time: 16, num_vehs: 4
-2021-10-05 18:18:22,399 - request_time: 16, calculated_time 16, calculate_time 17, send driver image: 106/p23_-122.7101759893137_37.901932947312424.jpg
-2021-10-05 18:18:22,400 - send veh info: 447, 106.0, 525484.2316308457, 4194975.112702553, 35.897184738434724, 16, -122.71012381866335, 37.901943246771985
-2021-10-05 18:18:22,400 - send veh info: 447, 525484.2316308457, 4194975.112702553, 35.897184738434724, 16
-2021-10-05 18:18:22,400 - send veh info: 85, 108.0, 525496.3463370975, 4194984.359057579, 37.87504592317614, 16, -122.70998569177236, 37.9020262441266
-2021-10-05 18:18:22,401 - send veh info: 1189, 37.0, 525532.2470029534, 4194918.877042609, 128.57100941527383, 16, -122.70957965513985, 37.90143505213299
-2021-10-05 18:18:22,401 - send veh info: 62, 106.0, 525387.0012642054, 4194904.736935641, 35.897184738434724, 16, -122.71123225302573, 37.90131167290751
-2021-10-05 18:18:22,404 - request_time: 16, calculated_time 16, calculate_time 17, vehicle needs stop? True
-2021-10-05 18:18:22,448 - request_time: 17, calculated_time 16, calculate_time 17, vehicle needs stop? True
-2021-10-05 18:18:22,527 - request_time: 18, calculated_time 16, calculate_time 17, vehicle needs stop? True
+2021-11-04 15:24:56,423 - r0_fire1_comm1_vphh2_vistor300_contra0_close0mflame_shelter0
+2021-11-04 15:24:56,987 - total numbers of agents taken 1490
+2021-11-04 15:25:15,593 - get direction: 
+2021-11-04 15:25:15,593 - start calculating positions...unity_time:0, calculating_time:0
+2021-11-04 15:25:15,681 - send veh info: id -2,x -1, y -1, calculate_time 0
+2021-11-04 15:25:15,692 - get direction: 
+2021-11-04 15:25:15,692 - start calculating positions...unity_time:0, calculating_time:0
+2021-11-04 15:25:15,718 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:15,730 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:15,738 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:15,750 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:15,765 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:15,796 - send veh info: id -2,x -1, y -1, calculate_time 0
+2021-11-04 15:25:15,805 - get direction: 
+2021-11-04 15:25:15,806 - start calculating positions...unity_time:0, calculating_time:0
+2021-11-04 15:25:15,823 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:15,858 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:15,873 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:15,894 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:15,905 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:15,917 - send veh info: id -2,x -1, y -1, calculate_time 0
+2021-11-04 15:25:15,921 - get direction: 
+2021-11-04 15:25:15,921 - start calculating positions...unity_time:0, calculating_time:0
+2021-11-04 15:25:15,937 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:15,957 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:15,973 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:16,010 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:16,030 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:16,035 - send veh info: id -2,x -1, y -1, calculate_time 0
+2021-11-04 15:25:16,046 - get direction: 
+2021-11-04 15:25:16,046 - start calculating positions...unity_time:0, calculating_time:0
+2021-11-04 15:25:16,062 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:16,078 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:16,105 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:16,126 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:16,153 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:16,169 - send veh info: id -2,x -1, y -1, calculate_time 0
+2021-11-04 15:25:16,173 - get direction: 
+2021-11-04 15:25:16,173 - start calculating positions...unity_time:0, calculating_time:0
+2021-11-04 15:25:16,194 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:16,213 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:16,225 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:16,245 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:16,270 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:16,286 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:16,300 - send veh info: id -2,x -1, y -1, calculate_time 0
+2021-11-04 15:25:16,322 - get direction: 
+2021-11-04 15:25:16,322 - start calculating positions...unity_time:0, calculating_time:0
+2021-11-04 15:25:16,350 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:16,366 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:16,377 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:16,399 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:16,418 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:16,438 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:16,455 - send veh info: id -2,x -1, y -1, calculate_time 0
+2021-11-04 15:25:16,473 - get direction: 
+2021-11-04 15:25:16,473 - start calculating positions...unity_time:0, calculating_time:0
+2021-11-04 15:25:16,494 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:16,513 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:16,525 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:16,539 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:16,562 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:16,581 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:16,598 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:16,605 - send veh info: id -2,x -1, y -1, calculate_time 0
+2021-11-04 15:25:16,633 - get direction: 
+2021-11-04 15:25:16,634 - start calculating positions...unity_time:0, calculating_time:0
+2021-11-04 15:25:16,653 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:16,673 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:16,685 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:16,702 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:16,726 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:16,742 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:16,760 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:16,774 - send veh info: id -2,x -1, y -1, calculate_time 0
+2021-11-04 15:25:16,793 - get direction: 
+2021-11-04 15:25:16,793 - start calculating positions...unity_time:0, calculating_time:0
+2021-11-04 15:25:16,814 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:16,833 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:16,846 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:16,862 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:16,878 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:16,893 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:16,914 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:16,936 - send veh info: id -2,x -1, y -1, calculate_time 0
+2021-11-04 15:25:16,951 - get direction: 
+2021-11-04 15:25:16,951 - start calculating positions...unity_time:0, calculating_time:0
+2021-11-04 15:25:16,974 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:16,994 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:17,006 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:17,022 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:17,041 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:17,062 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:17,082 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:17,099 - send veh info: id -2,x -1, y -1, calculate_time 0
+2021-11-04 15:25:17,118 - get direction: 
+2021-11-04 15:25:17,118 - start calculating positions...unity_time:0, calculating_time:0
+2021-11-04 15:25:17,146 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:17,166 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:17,182 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:17,202 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:17,217 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:17,234 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:17,256 - send veh info: id -2,x -1, y -1, calculate_time 0
+2021-11-04 15:25:17,262 - get direction: 
+2021-11-04 15:25:17,262 - start calculating positions...unity_time:0, calculating_time:0
+2021-11-04 15:25:17,282 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:17,302 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:17,314 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:17,329 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:17,362 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:17,377 - send veh info: id -2,x -2, y -2, calculate_time 0
+2021-11-04 15:25:17,388 - send veh info: id -2,x -1, y -1, calculate_time 0
+2021-11-04 15:25:17,397 - get start and end points
+2021-11-04 15:25:17,621 - t: 0, start node id: 100
+2021-11-04 15:25:17,622 - t: 0, end node id: 199
+2021-11-04 15:25:17,622 - agent' s departure time: 1
+2021-11-04 15:25:17,626 - get direction: 
+2021-11-04 15:25:17,626 - start calculating positions...unity_time:1, calculating_time:1
+2021-11-04 15:25:17,628 - {'forward': (107, 1, 9.107431639392532), 'left': (36, 102, -81.06742961368887), 'right': None, 'back': (108, 15, -172.96273138176036)}
+2021-11-04 15:25:17,628 - agent' s route: {100: 15, 15: 14, 14: 198, 198: 199}
+2021-11-04 15:25:17,628 - driver's system decision: 108
+2021-11-04 15:25:17,628 - time: 1, current link is n100_vl, next link is 108
+2021-11-04 15:25:17,630 - t:1, current link n100_vl' s queue_vehicles: [], next link 108' s queue_vehicles: []
+2021-11-04 15:25:17,630 - t:1, current link n100_vl' s run_vehicles: [447], next link 108' s run_vehicles: []
+2021-11-04 15:25:17,758 - end calculating positions, whole_vehs at calculating time: 1, num_vehs: 0
+2021-11-04 15:25:17,758 - send veh info: id -1,x -1, y -1, calculate_time 1
+2021-11-04 15:25:17,765 - send veh info: id -2,x -2, y -2, calculate_time 1
+2021-11-04 15:25:17,765 - request_time: 1, calculated_time 1, calculate_time 2, vehicle needs stop? False
+2021-11-04 15:25:17,767 - request_time: 1, calculated_time 1, calculate_time 2, send driver image: 
+2021-11-04 15:25:17,767 - request_time: 1, calculated_time 1, calculate_time 2, vehicle needs stop? False
+2021-11-04 15:25:17,769 - request_time: 1, calculated_time 1, calculate_time 2, send driver image: 
+2021-11-04 15:25:17,785 - send veh info: id -2,x -2, y -2, calculate_time 1
+2021-11-04 15:25:17,786 - request_time: 2, calculated_time 1, calculate_time 2, vehicle needs stop? False
+2021-11-04 15:25:17,787 - request_time: 2, calculated_time 1, calculate_time 2, send driver image: 
+2021-11-04 15:25:17,800 - get direction: 
+2021-11-04 15:25:17,801 - start calculating positions...unity_time:2, calculating_time:2
+2021-11-04 15:25:17,803 - {'forward': (107, 1, 9.107431639392532), 'left': (36, 102, -81.06742961368887), 'right': None, 'back': (108, 15, -172.96273138176036)}
+2021-11-04 15:25:17,803 - agent' s route: {100: 15, 15: 14, 14: 198, 198: 199}
+2021-11-04 15:25:17,803 - driver's system decision: 108
+2021-11-04 15:25:17,803 - time: 2, current link is n100_vl, next link is 108
+2021-11-04 15:25:17,805 - t:2, current link n100_vl' s queue_vehicles: [447], next link 108' s queue_vehicles: []
+2021-11-04 15:25:17,805 - t:2, current link n100_vl' s run_vehicles: [], next link 108' s run_vehicles: []
+2021-11-04 15:25:17,936 - end calculating positions, whole_vehs at calculating time: 2, num_vehs: 0
+2021-11-04 15:25:17,936 - request_time: 2, calculated_time 2, calculate_time 3, send driver image: 
+2021-11-04 15:25:17,936 - send veh info: id -1,x -1, y -1, calculate_time 2
+2021-11-04 15:25:17,953 - send veh info: id -2,x -2, y -2, calculate_time 2
+2021-11-04 15:25:17,954 - request_time: 2, calculated_time 2, calculate_time 3, vehicle needs stop? False
+2021-11-04 15:25:17,956 - request_time: 2, calculated_time 2, calculate_time 3, send driver image: 
+2021-11-04 15:25:17,974 - send veh info: id -2,x -2, y -2, calculate_time 2
+2021-11-04 15:25:17,975 - request_time: 3, calculated_time 2, calculate_time 3, vehicle needs stop? False
+2021-11-04 15:25:17,977 - request_time: 3, calculated_time 2, calculate_time 3, send driver image: 
+2021-11-04 15:25:17,993 - get direction: 
+2021-11-04 15:25:17,993 - start calculating positions...unity_time:3, calculating_time:3
+2021-11-04 15:25:17,996 - {'forward': (107, 1, 9.107431639392532), 'left': (36, 102, -81.06742961368887), 'right': None, 'back': (108, 15, -172.96273138176036)}
+2021-11-04 15:25:17,996 - agent' s route: {100: 15, 15: 14, 14: 198, 198: 199}
+2021-11-04 15:25:17,996 - driver's system decision: 108
+2021-11-04 15:25:17,996 - time: 3, current link is n100_vl, next link is 108
+2021-11-04 15:25:17,999 - t:3, current link n100_vl' s queue_vehicles: [], next link 108' s queue_vehicles: []
+2021-11-04 15:25:17,999 - t:3, current link n100_vl' s run_vehicles: [], next link 108' s run_vehicles: [447]
+2021-11-04 15:25:18,125 - end calculating positions, whole_vehs at calculating time: 3, num_vehs: 1
+2021-11-04 15:25:18,126 - send veh info: 447, 108.0, 525490.6776344529, 4194979.950056736, 37.87504592317614, 3, -122.71005032693941, 37.90198666494059
+2021-11-04 15:25:18,126 - send veh info: 447, 525490.6776344529, 4194979.950056736, 37.87504592317614, 3
+2021-11-04 15:25:18,131 - send veh info: id -2,x -2, y -2, calculate_time 3
+2021-11-04 15:25:18,132 - request_time: 3, calculated_time 3, calculate_time 4, vehicle needs stop? False
+2021-11-04 15:25:18,133 - request_time: 3, calculated_time 3, calculate_time 4, send driver image: 108/p0_-122.7100985_37.9019771__final.jpg
+2021-11-04 15:25:18,162 - send veh info: id -2,x -2, y -2, calculate_time 3
+2021-11-04 15:25:18,165 - request_time: 4, calculated_time 3, calculate_time 4, vehicle needs stop? False
+2021-11-04 15:25:18,168 - request_time: 4, calculated_time 3, calculate_time 4, send driver image: 108/p0_-122.7100985_37.9019771__final.jpg
+2021-11-04 15:25:18,185 - get direction: 
+2021-11-04 15:25:18,185 - start calculating positions...unity_time:4, calculating_time:4
+2021-11-04 15:25:18,188 - {'forward': (110, 30, -0.3981740803279519), 'left': None, 'right': (17, 14, 90.32971970054702), 'back': (109, 100, -179.90870138657237)}
+2021-11-04 15:25:18,189 - agent' s route: {15: 14, 14: 198, 198: 199}
+2021-11-04 15:25:18,189 - driver's system decision: 17
+2021-11-04 15:25:18,189 - time: 4, current link is 108, next link is 17
+2021-11-04 15:25:18,192 - t:4, current link 108' s queue_vehicles: [], next link 17' s queue_vehicles: []
+2021-11-04 15:25:18,192 - t:4, current link 108' s run_vehicles: [447], next link 17' s run_vehicles: []
+2021-11-04 15:25:18,323 - end calculating positions, whole_vehs at calculating time: 4, num_vehs: 1
+2021-11-04 15:25:18,323 - send veh info: 447, 108.0, 525496.3463370975, 4194984.359057579, 37.87504592317614, 4, -122.70998569177236, 37.9020262441266
+2021-11-04 15:25:18,323 - request_time: 4, calculated_time 4, calculate_time 5, vehicle needs stop? False
+2021-11-04 15:25:18,324 - send veh info: 447, 525496.3463370975, 4194984.359057579, 37.87504592317614, 4
+2021-11-04 15:25:18,325 - request_time: 4, calculated_time 4, calculate_time 5, send driver image: 108/p1_-122.71004449809277_37.90201016763519__final.jpg
+2021-11-04 15:25:18,344 - send veh info: id -2,x -2, y -2, calculate_time 4
+2021-11-04 15:25:18,361 - send veh info: id -2,x -2, y -2, calculate_time 4
+2021-11-04 15:25:18,362 - request_time: 5, calculated_time 4, calculate_time 5, vehicle needs stop? False
+2021-11-04 15:25:18,363 - request_time: 5, calculated_time 4, calculate_time 5, send driver image: 108/p1_-122.71004449809277_37.90201016763519__final.jpg
+2021-11-04 15:25:18,376 - get direction: 
+2021-11-04 15:25:18,376 - start calculating positions...unity_time:5, calculating_time:5
+2021-11-04 15:25:18,378 - {'forward': (110, 30, -0.3981740803279519), 'left': None, 'right': (17, 14, 90.32971970054702), 'back': (109, 100, -179.90870138657237)}
+2021-11-04 15:25:18,379 - agent' s route: {15: 14, 14: 198, 198: 199}
+2021-11-04 15:25:18,379 - driver's system decision: 17
+2021-11-04 15:25:18,379 - time: 5, current link is 108, next link is 17
+2021-11-04 15:25:18,381 - t:5, current link 108' s queue_vehicles: [], next link 17' s queue_vehicles: []
+2021-11-04 15:25:18,381 - t:5, current link 108' s run_vehicles: [447], next link 17' s run_vehicles: []
+2021-11-04 15:25:18,516 - end calculating positions, whole_vehs at calculating time: 5, num_vehs: 1
+2021-11-04 15:25:18,516 - send veh info: id -2,x -2, y -2, calculate_time 5
+2021-11-04 15:25:18,517 - request_time: 5, calculated_time 5, calculate_time 6, vehicle needs stop? False
+2021-11-04 15:25:18,517 - send veh info: 447, 108.0, 525505.17244594, 4194991.223824311, 37.87504592317614, 5, -122.70988505537717, 37.902087868420374
+2021-11-04 15:25:18,517 - send veh info: 447, 525505.17244594, 4194991.223824311, 37.87504592317614, 5
+2021-11-04 15:25:18,518 - request_time: 5, calculated_time 5, calculate_time 6, send driver image: 108/p3_-122.70993649427832_37.902076302905556__final.jpg
+2021-11-04 15:25:18,536 - send veh info: id -2,x -2, y -2, calculate_time 5
+2021-11-04 15:25:18,549 - send veh info: id -2,x -2, y -2, calculate_time 5
+2021-11-04 15:25:18,550 - request_time: 5, calculated_time 5, calculate_time 6, vehicle needs stop? False
+2021-11-04 15:25:18,551 - request_time: 5, calculated_time 5, calculate_time 6, send driver image: 108/p3_-122.70993649427832_37.902076302905556__final.jpg
+2021-11-04 15:25:18,552 - request_time: 6, calculated_time 5, calculate_time 6, vehicle needs stop? False
+2021-11-04 15:25:18,553 - request_time: 6, calculated_time 5, calculate_time 6, send driver image: 108/p3_-122.70993649427832_37.902076302905556__final.jpg
+2021-11-04 15:25:18,565 - get direction: 
+2021-11-04 15:25:18,565 - start calculating positions...unity_time:6, calculating_time:6
+2021-11-04 15:25:18,568 - {'forward': (110, 30, -0.3981740803279519), 'left': None, 'right': (17, 14, 90.32971970054702), 'back': (109, 100, -179.90870138657237)}
+2021-11-04 15:25:18,568 - agent' s route: {15: 14, 14: 198, 198: 199}
+2021-11-04 15:25:18,569 - driver's system decision: 17
+2021-11-04 15:25:18,569 - time: 6, current link is 108, next link is 17
+2021-11-04 15:25:18,572 - t:6, current link 108' s queue_vehicles: [], next link 17' s queue_vehicles: []
+2021-11-04 15:25:18,573 - t:6, current link 108' s run_vehicles: [447], next link 17' s run_vehicles: []
+2021-11-04 15:25:18,726 - end calculating positions, whole_vehs at calculating time: 6, num_vehs: 1
+2021-11-04 15:25:18,727 - send veh info: 447, 108.0, 525513.9985547847, 4194998.088591044, 37.875046016701084, 6, -122.70978441881434, 37.90214949262677
+2021-11-04 15:25:18,727 - send veh info: 447, 525513.9985547847, 4194998.088591044, 37.875046016701084, 6
+2021-11-04 15:25:18,727 - send veh info: id -2,x -2, y -2, calculate_time 6
+2021-11-04 15:25:18,727 - request_time: 6, calculated_time 6, calculate_time 7, vehicle needs stop? False
+2021-11-04 15:25:18,729 - request_time: 6, calculated_time 6, calculate_time 7, send driver image: 108/p5_-122.70982849046388_37.90214243817592__final.jpg
+2021-11-04 15:25:18,748 - send veh info: id -2,x -2, y -2, calculate_time 6
+2021-11-04 15:25:18,760 - send veh info: id -2,x -2, y -2, calculate_time 6
+2021-11-04 15:25:18,761 - request_time: 7, calculated_time 6, calculate_time 7, vehicle needs stop? False
+2021-11-04 15:25:18,762 - request_time: 7, calculated_time 6, calculate_time 7, send driver image: 108/p5_-122.70982849046388_37.90214243817592__final.jpg
+2021-11-04 15:25:18,763 - request_time: 7, calculated_time 6, calculate_time 7, vehicle needs stop? False
+2021-11-04 15:25:18,764 - request_time: 7, calculated_time 6, calculate_time 7, send driver image: 108/p5_-122.70982849046388_37.90214243817592__final.jpg
+2021-11-04 15:25:18,777 - get direction: 
+2021-11-04 15:25:18,777 - start calculating positions...unity_time:7, calculating_time:7
+2021-11-04 15:25:18,780 - {'forward': (110, 30, -0.3981740803279519), 'left': None, 'right': (17, 14, 90.32971970054702), 'back': (109, 100, -179.90870138657237)}
+2021-11-04 15:25:18,780 - agent' s route: {15: 14, 14: 198, 198: 199}
+2021-11-04 15:25:18,780 - driver's system decision: 17
+2021-11-04 15:25:18,780 - time: 7, current link is 108, next link is 17
+2021-11-04 15:25:18,784 - t:7, current link 108' s queue_vehicles: [], next link 17' s queue_vehicles: []
+2021-11-04 15:25:18,784 - t:7, current link 108' s run_vehicles: [447], next link 17' s run_vehicles: []
+2021-11-04 15:25:18,899 - end calculating positions, whole_vehs at calculating time: 7, num_vehs: 2
+2021-11-04 15:25:18,900 - send veh info: 88, 110.0, 525671.6489878608, 4195113.805601954, 36.14482614933839, 7, -122.70798708341113, 37.90318800720724
+2021-11-04 15:25:18,901 - send veh info: 447, 108.0, 525522.8246636272, 4195004.953357776, 37.875046016701084, 7, -122.70968378208391, 37.9022111167458
+2021-11-04 15:25:18,901 - send veh info: 447, 525522.8246636272, 4195004.953357776, 37.875046016701084, 7
+2021-11-04 15:25:18,907 - send veh info: id -2,x -2, y -2, calculate_time 7
+2021-11-04 15:25:18,907 - request_time: 7, calculated_time 7, calculate_time 8, vehicle needs stop? False
+2021-11-04 15:25:18,909 - request_time: 7, calculated_time 7, calculate_time 8, send driver image: 108/p7_-122.70972048664943_37.90220857344629__final.jpg
+2021-11-04 15:25:18,936 - send veh info: id -2,x -2, y -2, calculate_time 7
+2021-11-04 15:25:18,937 - request_time: 8, calculated_time 7, calculate_time 8, vehicle needs stop? False
+2021-11-04 15:25:18,939 - request_time: 8, calculated_time 7, calculate_time 8, send driver image: 108/p7_-122.70972048664943_37.90220857344629__final.jpg
+2021-11-04 15:25:18,940 - request_time: 8, calculated_time 7, calculate_time 8, vehicle needs stop? False
+2021-11-04 15:25:18,942 - request_time: 8, calculated_time 7, calculate_time 8, send driver image: 108/p7_-122.70972048664943_37.90220857344629__final.jpg
+2021-11-04 15:25:18,958 - get direction: 
+2021-11-04 15:25:18,958 - start calculating positions...unity_time:8, calculating_time:8
+2021-11-04 15:25:18,960 - {'forward': (110, 30, -0.3981740803279519), 'left': None, 'right': (17, 14, 90.32971970054702), 'back': (109, 100, -179.90870138657237)}
+2021-11-04 15:25:18,960 - agent' s route: {15: 14, 14: 198, 198: 199}
+2021-11-04 15:25:18,961 - driver's system decision: 17
+2021-11-04 15:25:18,961 - time: 8, current link is 108, next link is 17
+2021-11-04 15:25:18,963 - t:8, current link 108' s queue_vehicles: [], next link 17' s queue_vehicles: []
+2021-11-04 15:25:18,963 - t:8, current link 108' s run_vehicles: [447], next link 17' s run_vehicles: []
+2021-11-04 15:25:19,112 - end calculating positions, whole_vehs at calculating time: 8, num_vehs: 2
+2021-11-04 15:25:19,114 - send veh info: id -2,x -2, y -2, calculate_time 8
+2021-11-04 15:25:19,114 - send veh info: id -2,x -2, y -2, calculate_time 8
+2021-11-04 15:25:19,114 - send veh info: id -2,x -2, y -2, calculate_time 8
+2021-11-04 15:25:19,114 - send veh info: id -2,x -2, y -2, calculate_time 8
+2021-11-04 15:25:19,116 - send veh info: 88, 110.0, 525677.448629554, 4195118.0417276025, 36.14482614933839, 8, -122.70792096284578, 37.90322602343521
+2021-11-04 15:25:19,117 - send veh info: id -2,x -2, y -2, calculate_time 8
+2021-11-04 15:25:19,117 - send veh info: id -2,x -2, y -2, calculate_time 8
+2021-11-04 15:25:19,117 - send veh info: id -2,x -2, y -2, calculate_time 8
+2021-11-04 15:25:19,118 - send veh info: 447, 108.0, 525531.6507724698, 4195011.818124508, 37.875046025793814, 8, -122.70958314518586, 37.90227274077744
+2021-11-04 15:25:19,119 - send veh info: id -2,x -2, y -2, calculate_time 8
+2021-11-04 15:25:19,120 - send veh info: 447, 525531.6507724698, 4195011.818124508, 37.875046025793814, 8
+2021-11-04 15:25:19,161 - send veh info: id -2,x -2, y -2, calculate_time 8
+2021-11-04 15:25:19,162 - request_time: 8, calculated_time 8, calculate_time 9, vehicle needs stop? False
+2021-11-04 15:25:19,163 - request_time: 8, calculated_time 8, calculate_time 9, send driver image: 108/p9_-122.70961248283497_37.90227470871666__final.jpg
+2021-11-04 15:25:19,166 - request_time: 8, calculated_time 8, calculate_time 9, vehicle needs stop? False
+2021-11-04 15:25:19,167 - request_time: 8, calculated_time 8, calculate_time 9, send driver image: 108/p9_-122.70961248283497_37.90227470871666__final.jpg
+2021-11-04 15:25:19,169 - request_time: 8, calculated_time 8, calculate_time 9, vehicle needs stop? False
+2021-11-04 15:25:19,170 - request_time: 8, calculated_time 8, calculate_time 9, send driver image: 108/p9_-122.70961248283497_37.90227470871666__final.jpg
+2021-11-04 15:25:19,173 - request_time: 8, calculated_time 8, calculate_time 9, vehicle needs stop? False
+2021-11-04 15:25:19,175 - request_time: 8, calculated_time 8, calculate_time 9, send driver image: 108/p9_-122.70961248283497_37.90227470871666__final.jpg
+2021-11-04 15:25:19,192 - send veh info: id -2,x -2, y -2, calculate_time 8
+2021-11-04 15:25:19,194 - request_time: 8, calculated_time 8, calculate_time 9, vehicle needs stop? False
+2021-11-04 15:25:19,195 - request_time: 8, calculated_time 8, calculate_time 9, send driver image: 108/p9_-122.70961248283497_37.90227470871666__final.jpg
+2021-11-04 15:25:19,196 - request_time: 8, calculated_time 8, calculate_time 9, vehicle needs stop? False
+2021-11-04 15:25:19,198 - request_time: 8, calculated_time 8, calculate_time 9, send driver image: 108/p9_-122.70961248283497_37.90227470871666__final.jpg
+2021-11-04 15:25:19,198 - request_time: 8, calculated_time 8, calculate_time 9, vehicle needs stop? False
+2021-11-04 15:25:19,201 - request_time: 8, calculated_time 8, calculate_time 9, send driver image: 108/p9_-122.70961248283497_37.90227470871666__final.jpg
+2021-11-04 15:25:19,203 - request_time: 8, calculated_time 8, calculate_time 9, vehicle needs stop? False
+2021-11-04 15:25:19,205 - request_time: 8, calculated_time 8, calculate_time 9, send driver image: 108/p9_-122.70961248283497_37.90227470871666__final.jpg
+2021-11-04 15:25:19,207 - request_time: 9, calculated_time 8, calculate_time 9, vehicle needs stop? False
+2021-11-04 15:25:19,209 - request_time: 9, calculated_time 8, calculate_time 9, send driver image: 108/p9_-122.70961248283497_37.90227470871666__final.jpg
+2021-11-04 15:25:19,222 - get direction: 
+2021-11-04 15:25:19,222 - start calculating positions...unity_time:9, calculating_time:9
+2021-11-04 15:25:19,224 - {'forward': (110, 30, -0.3981740803279519), 'left': None, 'right': (17, 14, 90.32971970054702), 'back': (109, 100, -179.90870138657237)}
+2021-11-04 15:25:19,225 - agent' s route: {15: 14, 14: 198, 198: 199}
+2021-11-04 15:25:19,225 - driver's system decision: 17
+2021-11-04 15:25:19,225 - time: 9, current link is 108, next link is 17
+2021-11-04 15:25:19,227 - t:9, current link 108' s queue_vehicles: [], next link 17' s queue_vehicles: []
+2021-11-04 15:25:19,227 - t:9, current link 108' s run_vehicles: [447], next link 17' s run_vehicles: []
+2021-11-04 15:25:19,365 - send veh info: id -2,x -2, y -2, calculate_time 9
+2021-11-04 15:25:19,370 - end calculating positions, whole_vehs at calculating time: 9, num_vehs: 2
+2021-11-04 15:25:19,371 - send veh info: 88, 110.0, 525686.4783859294, 4195124.637166528, 36.14482614933839, 9, -122.70781801624805, 37.90328521275414
+2021-11-04 15:25:19,371 - request_time: 9, calculated_time 9, calculate_time 10, send driver image: 108/p11_-122.70950447902052_37.90234084398703__final.jpg
+2021-11-04 15:25:19,371 - send veh info: 447, 108.0, 525540.4768813124, 4195018.682891239, 37.875046025793814, 9, -122.70948250812022, 37.9023343647217
+2021-11-04 15:25:19,371 - send veh info: 447, 525540.4768813124, 4195018.682891239, 37.875046025793814, 9
+2021-11-04 15:25:19,389 - send veh info: id -2,x -2, y -2, calculate_time 9
+2021-11-04 15:25:19,405 - send veh info: id -2,x -2, y -2, calculate_time 9
+2021-11-04 15:25:19,407 - request_time: 9, calculated_time 9, calculate_time 10, vehicle needs stop? False
+2021-11-04 15:25:19,408 - request_time: 9, calculated_time 9, calculate_time 10, send driver image: 108/p11_-122.70950447902052_37.90234084398703__final.jpg
+2021-11-04 15:25:19,409 - request_time: 10, calculated_time 9, calculate_time 10, vehicle needs stop? False
+2021-11-04 15:25:19,411 - request_time: 10, calculated_time 9, calculate_time 10, send driver image: 108/p11_-122.70950447902052_37.90234084398703__final.jpg
+2021-11-04 15:25:19,433 - get direction: 
+2021-11-04 15:25:19,434 - start calculating positions...unity_time:10, calculating_time:10
+2021-11-04 15:25:19,436 - {'forward': (110, 30, -0.3981740803279519), 'left': None, 'right': (17, 14, 90.32971970054702), 'back': (109, 100, -179.90870138657237)}
+2021-11-04 15:25:19,436 - agent' s route: {15: 14, 14: 198, 198: 199}
+2021-11-04 15:25:19,436 - driver's system decision: 17
+2021-11-04 15:25:19,436 - time: 10, current link is 108, next link is 17
+2021-11-04 15:25:19,440 - t:10, current link 108' s queue_vehicles: [], next link 17' s queue_vehicles: []
+2021-11-04 15:25:19,440 - t:10, current link 108' s run_vehicles: [447], next link 17' s run_vehicles: []
+2021-11-04 15:25:19,572 - send veh info: id -2,x -2, y -2, calculate_time 10
+2021-11-04 15:25:19,576 - end calculating positions, whole_vehs at calculating time: 10, num_vehs: 3
+2021-11-04 15:25:19,577 - send veh info: 88, 110.0, 525695.5081423084, 4195131.232605455, 36.14482629574137, 10, -122.70771506948563, 37.903344401981784
+2021-11-04 15:25:19,577 - request_time: 10, calculated_time 10, calculate_time 11, send driver image: 108/p12_-122.7094504771133_37.902373911622206__final.jpg
+2021-11-04 15:25:19,577 - send veh info: 655, 16.0, 525779.1931501953, 4194958.914166011, 125.46292753306646, 10, -122.70676933133683, 37.90178894008818
+2021-11-04 15:25:19,578 - send veh info: 447, 108.0, 525549.3029901546, 4195025.547657971, 37.875046016701084, 10, -122.70938187088696, 37.90239598857859
+2021-11-04 15:25:19,578 - send veh info: 447, 525549.3029901546, 4195025.547657971, 37.875046016701084, 10
+2021-11-04 15:25:19,596 - send veh info: id -2,x -2, y -2, calculate_time 10
+2021-11-04 15:25:19,614 - send veh info: id -2,x -2, y -2, calculate_time 10
+2021-11-04 15:25:19,615 - request_time: 10, calculated_time 10, calculate_time 11, vehicle needs stop? False
+2021-11-04 15:25:19,617 - request_time: 10, calculated_time 10, calculate_time 11, send driver image: 108/p12_-122.7094504771133_37.902373911622206__final.jpg
+2021-11-04 15:25:19,617 - request_time: 11, calculated_time 10, calculate_time 11, vehicle needs stop? False
+2021-11-04 15:25:19,618 - request_time: 11, calculated_time 10, calculate_time 11, send driver image: 108/p12_-122.7094504771133_37.902373911622206__final.jpg
+2021-11-04 15:25:19,633 - get direction: 
+2021-11-04 15:25:19,633 - start calculating positions...unity_time:11, calculating_time:11
+2021-11-04 15:25:19,635 - {'forward': (110, 30, -0.3981740803279519), 'left': None, 'right': (17, 14, 90.32971970054702), 'back': (109, 100, -179.90870138657237)}
+2021-11-04 15:25:19,635 - agent' s route: {15: 14, 14: 198, 198: 199}
+2021-11-04 15:25:19,635 - driver's system decision: 17
+2021-11-04 15:25:19,636 - time: 11, current link is 108, next link is 17
+2021-11-04 15:25:19,639 - t:11, current link 108' s queue_vehicles: [], next link 17' s queue_vehicles: []
+2021-11-04 15:25:19,639 - t:11, current link 108' s run_vehicles: [447], next link 17' s run_vehicles: []
+2021-11-04 15:25:19,766 - send veh info: id -2,x -2, y -2, calculate_time 11
+2021-11-04 15:25:19,771 - end calculating positions, whole_vehs at calculating time: 11, num_vehs: 3
+2021-11-04 15:25:19,772 - send veh info: 88, 110.0, 525704.5378986801, 4195137.828044378, 36.14482614933839, 11, -122.70761212255867, 37.903403591118064
+2021-11-04 15:25:19,772 - send veh info: 655, 16.0, 525775.0351872325, 4194964.751400466, 125.46292754705003, 11, -122.7068164176479, 37.90184166850118
+2021-11-04 15:25:19,772 - send veh info: 447, 108.0, 525558.2486467302, 4195032.144206421, 35.74685397135216, 11, -122.70927988317983, 37.90245519155595
+2021-11-04 15:25:19,773 - request_time: 11, calculated_time 11, calculate_time 12, send driver image: 108/p14_-122.70930728469831_37.90245905532464__final.jpg
+2021-11-04 15:25:19,773 - send veh info: 447, 525558.2486467302, 4195032.144206421, 35.74685397135216, 11
+2021-11-04 15:25:19,787 - send veh info: id -2,x -2, y -2, calculate_time 11
+2021-11-04 15:25:19,805 - send veh info: id -2,x -2, y -2, calculate_time 11
+2021-11-04 15:25:19,805 - request_time: 11, calculated_time 11, calculate_time 12, vehicle needs stop? False
+2021-11-04 15:25:19,807 - request_time: 11, calculated_time 11, calculate_time 12, send driver image: 108/p14_-122.70930728469831_37.90245905532464__final.jpg
+2021-11-04 15:25:19,807 - request_time: 12, calculated_time 11, calculate_time 12, vehicle needs stop? False
+2021-11-04 15:25:19,809 - request_time: 12, calculated_time 11, calculate_time 12, send driver image: 108/p14_-122.70930728469831_37.90245905532464__final.jpg
+2021-11-04 15:25:19,810 - request_time: 12, calculated_time 11, calculate_time 12, vehicle needs stop? False
+2021-11-04 15:25:19,811 - request_time: 12, calculated_time 11, calculate_time 12, send driver image: 108/p14_-122.70930728469831_37.90245905532464__final.jpg
+2021-11-04 15:25:19,825 - get direction: 
+2021-11-04 15:25:19,825 - start calculating positions...unity_time:12, calculating_time:12
+2021-11-04 15:25:19,828 - {'forward': (110, 30, -0.3981740803279519), 'left': None, 'right': (17, 14, 90.32971970054702), 'back': (109, 100, -179.90870138657237)}
+2021-11-04 15:25:19,828 - agent' s route: {15: 14, 14: 198, 198: 199}
+2021-11-04 15:25:19,828 - driver's system decision: 17
+2021-11-04 15:25:19,828 - time: 12, current link is 108, next link is 17
+2021-11-04 15:25:19,831 - t:12, current link 108' s queue_vehicles: [], next link 17' s queue_vehicles: []
+2021-11-04 15:25:19,832 - t:12, current link 108' s run_vehicles: [447], next link 17' s run_vehicles: []
+2021-11-04 15:25:19,961 - send veh info: id -2,x -2, y -2, calculate_time 12
+2021-11-04 15:25:19,967 - end calculating positions, whole_vehs at calculating time: 12, num_vehs: 3
+2021-11-04 15:25:19,968 - send veh info: 88, 110.0, 525713.5676550553, 4195144.423483304, 36.14482613597159, 12, -122.70750917546702, 37.90346278016306
+2021-11-04 15:25:19,968 - send veh info: 655, 16.0, 525768.556519981, 4194973.846599253, 125.46292753306646, 12, -122.7068897846067, 37.90192382644435
+2021-11-04 15:25:19,968 - send veh info: 447, 108.0, 525567.3235936757, 4195038.676476893, 35.74685397135216, 12, -122.70917642695282, 37.90251381147693
+2021-11-04 15:25:19,968 - send veh info: 447, 525567.3235936757, 4195038.676476893, 35.74685397135216, 12
+2021-11-04 15:25:19,974 - send veh info: id -2,x -2, y -2, calculate_time 12
+2021-11-04 15:25:19,988 - send veh info: id -2,x -2, y -2, calculate_time 12
+2021-11-04 15:25:19,990 - request_time: 12, calculated_time 12, calculate_time 13, vehicle needs stop? False
+2021-11-04 15:25:19,991 - request_time: 12, calculated_time 12, calculate_time 13, send driver image: 108/p16_-122.70919625409496_37.90252196597392__final.jpg
+2021-11-04 15:25:19,992 - request_time: 13, calculated_time 12, calculate_time 13, vehicle needs stop? False
+2021-11-04 15:25:19,994 - request_time: 13, calculated_time 12, calculate_time 13, send driver image: 108/p16_-122.70919625409496_37.90252196597392__final.jpg
+2021-11-04 15:25:20,014 - get direction: 
+2021-11-04 15:25:20,014 - start calculating positions...unity_time:13, calculating_time:13
+2021-11-04 15:25:20,017 - {'forward': (110, 30, -0.3981740803279519), 'left': None, 'right': (17, 14, 90.32971970054702), 'back': (109, 100, -179.90870138657237)}
+2021-11-04 15:25:20,017 - agent' s route: {15: 14, 14: 198, 198: 199}
+2021-11-04 15:25:20,018 - driver's system decision: 17
+2021-11-04 15:25:20,018 - time: 13, current link is 108, next link is 17
+2021-11-04 15:25:20,022 - t:13, current link 108' s queue_vehicles: [], next link 17' s queue_vehicles: []
+2021-11-04 15:25:20,022 - t:13, current link 108' s run_vehicles: [447], next link 17' s run_vehicles: []
+2021-11-04 15:25:20,164 - end calculating positions, whole_vehs at calculating time: 13, num_vehs: 3
+2021-11-04 15:25:20,165 - send veh info: 88, 110.0, 525722.5974114309, 4195151.018922229, 36.14482614933839, 13, -122.70740622821074, 37.903521969116746
+2021-11-04 15:25:20,166 - request_time: 13, calculated_time 13, calculate_time 14, send driver image: 108/p18_-122.70908522349161_37.902584876623195__final.jpg
+2021-11-04 15:25:20,166 - send veh info: 655, 16.0, 525762.0778527278, 4194982.941798044, 125.46292761275235, 13, -122.70696315172832, 37.90200598434135
+2021-11-04 15:25:20,166 - send veh info: 447, 108.0, 525576.3985406191, 4195045.208747364, 35.74685388384274, 13, -122.70907297056198, 37.9025724313057
+2021-11-04 15:25:20,167 - send veh info: 447, 525576.3985406191, 4195045.208747364, 35.74685388384274, 13
+2021-11-04 15:25:20,190 - send veh info: id -2,x -2, y -2, calculate_time 13
+2021-11-04 15:25:20,217 - send veh info: id -2,x -2, y -2, calculate_time 13
+2021-11-04 15:25:20,218 - request_time: 14, calculated_time 13, calculate_time 14, vehicle needs stop? False
+2021-11-04 15:25:20,220 - request_time: 14, calculated_time 13, calculate_time 14, send driver image: 108/p18_-122.70908522349161_37.902584876623195__final.jpg
+2021-11-04 15:25:20,233 - get direction: 
+2021-11-04 15:25:20,233 - start calculating positions...unity_time:14, calculating_time:14
+2021-11-04 15:25:20,235 - {'forward': (110, 30, -0.3981740803279519), 'left': None, 'right': (17, 14, 90.32971970054702), 'back': (109, 100, -179.90870138657237)}
+2021-11-04 15:25:20,235 - agent' s route: {15: 14, 14: 198, 198: 199}
+2021-11-04 15:25:20,235 - driver's system decision: 17
+2021-11-04 15:25:20,236 - time: 14, current link is 108, next link is 17
+2021-11-04 15:25:20,239 - t:14, current link 108' s queue_vehicles: [], next link 17' s queue_vehicles: []
+2021-11-04 15:25:20,239 - t:14, current link 108' s run_vehicles: [447, 85], next link 17' s run_vehicles: []
+2021-11-04 15:25:20,372 - end calculating positions, whole_vehs at calculating time: 14, num_vehs: 4
+2021-11-04 15:25:20,373 - send veh info: 88, 110.0, 525731.6271678063, 4195157.614361155, 36.14482614933839, 14, -122.70730328078984, 37.90358115797912
+2021-11-04 15:25:20,373 - send veh info: 655, 16.0, 525755.5991854757, 4194992.036996832, 125.46292762673593, 14, -122.70703651901277, 37.90208814219211
+2021-11-04 15:25:20,374 - send veh info: 447, 108.0, 525585.4734875666, 4195051.741017837, 35.74685397135216, 14, -122.70896951400725, 37.90263105104232
+2021-11-04 15:25:20,374 - send veh info: 447, 525585.4734875666, 4195051.741017837, 35.74685397135216, 14
+2021-11-04 15:25:20,375 - send veh info: 85, 108.0, 525490.6776344529, 4194979.950056736, 37.87504592317614, 14, -122.71005032693941, 37.90198666494059
+2021-11-04 15:25:20,381 - send veh info: id -2,x -2, y -2, calculate_time 14
+2021-11-04 15:25:20,383 - request_time: 14, calculated_time 14, calculate_time 15, vehicle needs stop? False
+2021-11-04 15:25:20,386 - request_time: 14, calculated_time 14, calculate_time 15, send driver image: 108/p19_-122.70902970818995_37.90261633194783__final.jpg
+2021-11-04 15:25:20,412 - send veh info: id -2,x -2, y -2, calculate_time 14
+2021-11-04 15:25:20,414 - request_time: 15, calculated_time 14, calculate_time 15, vehicle needs stop? False
+2021-11-04 15:25:20,417 - request_time: 15, calculated_time 14, calculate_time 15, send driver image: 108/p19_-122.70902970818995_37.90261633194783__final.jpg
+2021-11-04 15:25:20,434 - get direction: 
+2021-11-04 15:25:20,435 - start calculating positions...unity_time:15, calculating_time:15
+2021-11-04 15:25:20,438 - {'forward': (110, 30, -0.3981740803279519), 'left': None, 'right': (17, 14, 90.32971970054702), 'back': (109, 100, -179.90870138657237)}
+2021-11-04 15:25:20,438 - agent' s route: {15: 14, 14: 198, 198: 199}
+2021-11-04 15:25:20,439 - driver's system decision: 17
+2021-11-04 15:25:20,439 - time: 15, current link is 108, next link is 17
+2021-11-04 15:25:20,445 - t:15, current link 108' s queue_vehicles: [], next link 17' s queue_vehicles: []
+2021-11-04 15:25:20,445 - t:15, current link 108' s run_vehicles: [447, 85], next link 17' s run_vehicles: []
+2021-11-04 15:25:20,614 - send veh info: id -2,x -2, y -2, calculate_time 15
+2021-11-04 15:25:20,620 - end calculating positions, whole_vehs at calculating time: 15, num_vehs: 4
+2021-11-04 15:25:20,620 - request_time: 15, calculated_time 15, calculate_time 16, send driver image: 108/p21_-122.70891867758658_37.90267924259711__final.jpg
+2021-11-04 15:25:20,621 - send veh info: 88, 110.0, 525740.7045413137, 4195164.115599943, 35.60083917687128, 15, -122.7071997949305, 37.90363949638353
+2021-11-04 15:25:20,621 - send veh info: 655, 16.0, 525749.1205182254, 4195001.132195619, 125.46292754705003, 15, -122.70710988646002, 37.90217029999666
+2021-11-04 15:25:20,622 - send veh info: 447, 108.0, 525594.5484345121, 4195058.273288309, 35.74685397135216, 15, -122.7088660572887, 37.90268967068675
+2021-11-04 15:25:20,622 - send veh info: 447, 525594.5484345121, 4195058.273288309, 35.74685397135216, 15
+2021-11-04 15:25:20,623 - send veh info: 85, 108.0, 525496.3463370975, 4194984.359057579, 37.87504592317614, 15, -122.70998569177236, 37.9020262441266
+2021-11-04 15:25:20,645 - send veh info: id -2,x -2, y -2, calculate_time 15
+2021-11-04 15:25:20,671 - send veh info: id -2,x -2, y -2, calculate_time 15
+2021-11-04 15:25:20,673 - request_time: 15, calculated_time 15, calculate_time 16, vehicle needs stop? False
+2021-11-04 15:25:20,676 - request_time: 15, calculated_time 15, calculate_time 16, send driver image: 108/p21_-122.70891867758658_37.90267924259711__final.jpg
+2021-11-04 15:25:20,677 - request_time: 16, calculated_time 15, calculate_time 16, vehicle needs stop? False
+2021-11-04 15:25:20,679 - request_time: 16, calculated_time 15, calculate_time 16, send driver image: 108/p21_-122.70891867758658_37.90267924259711__final.jpg
+2021-11-04 15:25:20,694 - get direction: 
+2021-11-04 15:25:20,694 - start calculating positions...unity_time:16, calculating_time:16
+2021-11-04 15:25:20,696 - {'forward': (110, 30, -0.3981740803279519), 'left': None, 'right': (17, 14, 90.32971970054702), 'back': (109, 100, -179.90870138657237)}
+2021-11-04 15:25:20,697 - agent' s route: {15: 14, 14: 198, 198: 199}
+2021-11-04 15:25:20,697 - driver's system decision: 17
+2021-11-04 15:25:20,697 - time: 16, current link is 108, next link is 17
+2021-11-04 15:25:20,702 - t:16, current link 108' s queue_vehicles: [], next link 17' s queue_vehicles: []
+2021-11-04 15:25:20,702 - t:16, current link 108' s run_vehicles: [447, 85], next link 17' s run_vehicles: []
+2021-11-04 15:25:20,826 - end calculating positions, whole_vehs at calculating time: 16, num_vehs: 6
+2021-11-04 15:25:20,827 - send veh info: 88, 110.0, 525749.7965092661, 4195170.625011098, 35.60083917687128, 16, -122.70709614260635, 37.90369790793957
+2021-11-04 15:25:20,828 - send veh info: 683, 110.0, 525671.6489878608, 4195113.805601954, 36.14482614933839, 16, -122.70798708341113, 37.90318800720724
+2021-11-04 15:25:20,828 - send veh info: 655, 16.0, 525742.6418509722, 4195010.227394409, 125.46292762673593, 16, -122.70718325407015, 37.90225245775502
+2021-11-04 15:25:20,829 - send veh info: 259, 16.0, 525779.1931501953, 4194958.914166011, 125.46292753306646, 16, -122.70676933133683, 37.90178894008818
+2021-11-04 15:25:20,829 - send veh info: 447, 108.0, 525603.6233814579, 4195064.805558782, 35.74685398000447, 16, -122.70876260040633, 37.902748290238975
+2021-11-04 15:25:20,829 - send veh info: 447, 525603.6233814579, 4195064.805558782, 35.74685398000447, 16
+2021-11-04 15:25:20,830 - send veh info: 85, 108.0, 525505.17244594, 4194991.223824311, 37.87504592317614, 16, -122.70988505537717, 37.902087868420374
+2021-11-04 15:25:20,837 - send veh info: id -2,x -2, y -2, calculate_time 16
+2021-11-04 15:25:21,937 - request_time: 17, calculated_time 16, calculate_time 17, vehicle needs stop? False
+2021-11-04 15:25:21,938 - request_time: 17, calculated_time 16, calculate_time 17, send driver image: 108/p23_-122.70880764698323_37.90274215324639__final.jpg
+2021-11-04 15:25:22,009 - request_time: 17, calculated_time 16, calculate_time 17, vehicle needs stop? False
+2021-11-04 15:25:22,011 - request_time: 17, calculated_time 16, calculate_time 17, send driver image: 108/p23_-122.70880764698323_37.90274215324639__final.jpg

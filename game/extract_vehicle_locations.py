@@ -37,6 +37,8 @@ def extract_vehicle_locations(network, t, agent_id=None, logger = None):
     # for link_id, link in links_dict.items():
     for link_id in select_links_id:
         link = links_dict[link_id]
+        # if link_id!=agent_link or link_id!=trace_agent.next_link:
+        #     continue
         
         ### skip virtual links
         if link.link_type == 'v':

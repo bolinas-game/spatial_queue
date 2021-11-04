@@ -12,9 +12,7 @@ import numpy as np
 import pandas as pd
 from pyproj import Transformer
 import bisect
-
 pd.set_option('display.max_columns', 500)
-import scipy.io as sio
 import geopandas as gpd
 from ctypes import c_double
 # geometry
@@ -23,45 +21,23 @@ import shapely.ops
 from shapely.wkt import loads
 from shapely.ops import substring
 from shapely.geometry import Point
-import scipy.spatial.distance
-# raster
-import rasterio as rio
-import rasterio.plot
-from rasterio.warp import transform
-# from osgeo import gdal
-from PIL import Image
 # plot
 import matplotlib.pyplot as plt
 from matplotlib import cm
 import queue
 import math
 ### dir
-home_dir = '/Users/wangyanglan/Public/Project/spatial_queue'  # os.environ['HOME']+'/spatial_queue'
-work_dir = '/Users/wangyanglan/Public/Project/spatial_queue'  # os.environ['WORK']+'/spatial_queue'
-scratch_dir = '../projects/bolinas/simulation_outputs'  # os.environ['OUTPUT_FOLDER']
-
-### user
-sys.path.insert(0, home_dir)
-import util.haversine as haversine
-from model.queue_class import Network, Node, Link, Agent
+from model.queue_class import Network
 import game.extract_vehicle_locations as extract_vehicle_location
-
-
-import warnings
-
-from communicate import server_zmq
 from communicate import server_rpc
-
-import global_var as gl
+print(sys.path)
 import ast
 
-warnings.filterwarnings('error', message='Creating an ndarray from ragged*')
-
-
-links_list = pd.read_csv('../split_link/links_new.csv')
+root_dir = server_rpc.root_directory
+links_list = pd.read_csv(os.path.join(root_dir ,'split_link/links_new.csv'))
 
 def preparation(random_seed=0, fire_id=None, comm_id=None, vphh=None, visitor_cnts=None, contra_id=None,
-                link_closed_time=None, closed_mode=None, shelter_scen_id=None, scen_nm=None):
+                link_closed_time=None, closed_mode=None, shelter_scen_id=None, scen_nm=None, logger=None):
     ### logging and global variables
 
     project_location = '/projects/bolinas'
@@ -81,13 +57,12 @@ def preparation(random_seed=0, fire_id=None, comm_id=None, vphh=None, visitor_cn
         cf_files = []
 
     scen_nm = scen_nm
-    logging.basicConfig(filename=scratch_dir + simulation_outputs + '/log/{}.log'.format(scen_nm), filemode='w',
-                        format='%(asctime)s - %(message)s', level=logging.INFO)
-    logging.info(scen_nm)
+
+    logger.info(scen_nm)
     print('log file created for {}'.format(scen_nm))
 
     ### network
-    with open(work_dir + network_file_special_nodes) as special_nodes_file:
+    with open(root_dir + network_file_special_nodes) as special_nodes_file:
         special_nodes = json.load(special_nodes_file)
     network = Network()
     network.dataframe_to_network(project_location=project_location, network_file_edges=network_file_edges,
@@ -98,7 +73,7 @@ def preparation(random_seed=0, fire_id=None, comm_id=None, vphh=None, visitor_cn
 
     ### demand
     network.add_demand(demand_files=demand_files)
-    logging.info('total numbers of agents taken {}'.format(len(network.agents.keys())))
+    logger.info('total numbers of agents taken {}'.format(len(network.agents.keys())))
 
     return {'network': network}, {'scen_nm': scen_nm, 'simulation_outputs': simulation_outputs, 'fire_id': fire_id,
                                   'comm_id': comm_id,
@@ -293,7 +268,7 @@ def plot_run_queue_fire(t, current_link=None, fire_id=None, comm_id=None, shelte
 #     plt.close()
 
 # %%
-def initialize():
+def initialize(logger):
     random_seed = 0
     random.seed(random_seed)
     np.random.seed(random_seed)
@@ -308,7 +283,7 @@ def initialize():
     closed_mode = 'flame'
 
     # base network as the base layer of plotting
-    roads_df = pd.read_csv('../projects/bolinas/network_inputs/bolinas_edges_sim.csv')
+    roads_df = pd.read_csv(os.path.join(root_dir,'projects/bolinas/network_inputs/bolinas_edges_sim.csv'))
     roads_gdf = gpd.GeoDataFrame(roads_df, crs='epsg:4326', geometry=roads_df['geometry'].map(loads)).to_crs(26910)
 
     # set scenario name
@@ -326,7 +301,7 @@ def initialize():
     data, config, update_data = preparation(random_seed=random_seed, fire_id=fire_id, comm_id=comm_id, vphh=vphh,
                                             visitor_cnts=visitor_cnts, contra_id=contra_id,
                                             shelter_scen_id=shelter_scen_id,
-                                            link_closed_time=link_closed_time, closed_mode=closed_mode, scen_nm=scen_nm)
+                                            link_closed_time=link_closed_time, closed_mode=closed_mode, scen_nm=scen_nm, logger = logger)
     return data, config, update_data
 
 def distance(x1, y1, x2, y2):
@@ -526,7 +501,9 @@ def get_image_rpc(driver_link_list, driver_position):
         perpe_point = calculate_perpen_point(x0, y0, x1, y1, x2, y2)
         if min(x1,x2)<=perpe_point[0]<max(x1,x2) and min(y1, y2) <=perpe_point[1]< max(y1,y2):
             find = True
-            return "p{}_{}_{}.jpg".format(i,x1,y1)
+            # return "p{}_{}_{}.jpg".format(i,x1,y1)
+            return "p{}_{}_{}__final.jpg".format(i, x1, y1)
+
     if not find:
         print("stop")
     return ""
@@ -539,6 +516,8 @@ def test_each_grpc(t, data, config, update_data, logger, direction_tmp, isStop):
     # for t in range(0, 1001):
     # run simulation for one step
     agent_id = 447
+    if data["network"].agents[agent_id].current_link_end_nid == data["network"].agents[agent_id].destin_nid:
+        print("wrong")
     network = one_step(t, data, config, update_data, agent_id)
 
     trace_agent = network.agents[agent_id]
@@ -559,37 +538,37 @@ def test_each_grpc(t, data, config, update_data, logger, direction_tmp, isStop):
             alternative_link_angle = (current_link_angle - network.links[alt_link_id].in_angle) / 3.14 * 180
             if alternative_link_angle < -180: alternative_link_angle += 360
             if alternative_link_angle > 180: alternative_link_angle -= 360
-            alternative_links.append([alt_link_id, alternative_link_angle])
+            alternative_links.append([alt_link_id, network.links[alt_link_id].end_nid, alternative_link_angle])
         # print(alternative_links)
         alternative_links_by_direction = {'forward': None, 'left': None, 'right': None, 'back': None}
         # forward
         # (forward_link, angle) = min(alternative_links, key=lambda l: abs(l[1] - 0))
-        potential_forward_link = [(forward_link, angle) for (forward_link, angle) in alternative_links if
+        potential_forward_link = [(forward_link, end_nid, angle) for (forward_link, end_nid, angle) in alternative_links if
                                   (abs(angle - 0) <= 45 and forward_link not in checked_outgoing_links)]
         if (len(potential_forward_link) > 0):
-            alternative_links_by_direction['forward'] = min(potential_forward_link, key=lambda l: abs(l[1] - 0))
+            alternative_links_by_direction['forward'] = min(potential_forward_link, key=lambda l: abs(l[2] - 0))
             checked_outgoing_links.append(alternative_links_by_direction['forward'])
 
         # left
-        potential_left_link = [(left_link, angle) for (left_link, angle) in alternative_links if
+        potential_left_link = [(left_link, end_nid, angle) for (left_link, end_nid, angle) in alternative_links if
                                (abs(angle - (-90)) <= 45 and (left_link not in checked_outgoing_links))]
         if (len(potential_left_link) > 0):
-            alternative_links_by_direction['left'] = min(potential_left_link, key=lambda l: abs(l[1] - (-90)))
+            alternative_links_by_direction['left'] = min(potential_left_link, key=lambda l: abs(l[2] - (-90)))
             checked_outgoing_links.append(alternative_links_by_direction['left'])
 
         # right
-        potential_right_link = [(right_link, angle) for (right_link, angle) in alternative_links if
+        potential_right_link = [(right_link, end_nid, angle) for (right_link, end_nid, angle) in alternative_links if
                                 (abs(angle - 90) <= 45 and (right_link not in checked_outgoing_links))]
         # (right_link, angle) = min(alternative_links, key=lambda l: abs(l[1] - 90))
         if (len(potential_right_link) > 0):
-            alternative_links_by_direction['right'] = min(potential_right_link, key=lambda l: abs(l[1] - 90))
+            alternative_links_by_direction['right'] = min(potential_right_link, key=lambda l: abs(l[2] - 90))
             checked_outgoing_links.append(alternative_links_by_direction['right'])
 
         # backward
-        potential_back_link = [(back_link, angle) for (back_link, angle) in alternative_links if
+        potential_back_link = [(back_link, end_nid, angle) for (back_link, end_nid, angle) in alternative_links if
                                (abs(angle - 0) > 135 and (back_link not in checked_outgoing_links))]
         if len(potential_back_link) > 0:
-            alternative_links_by_direction['back'] = max(potential_back_link, key=lambda l: abs(l[1]))
+            alternative_links_by_direction['back'] = max(potential_back_link, key=lambda l: abs(l[2]))
             checked_outgoing_links.append(alternative_links_by_direction['back'])
 
         print(alternative_links_by_direction)
@@ -598,6 +577,10 @@ def test_each_grpc(t, data, config, update_data, logger, direction_tmp, isStop):
         # agent_next_link_direction = gl.get_value("direction_message")
         agent_next_link_direction = direction_tmp
         valid_links_by_direction = [k for k, v in alternative_links_by_direction.items() if v is not None]
+
+        logger.info("agent' s route: {}".format(network.agents[agent_id].route))
+        if len(network.agents[agent_id].route)==0:
+            logger.info("get destination")
 
         if agent_next_link_direction in valid_links_by_direction:
             agent_next_link = alternative_links_by_direction[agent_next_link_direction][0]#link_id
@@ -613,7 +596,7 @@ def test_each_grpc(t, data, config, update_data, logger, direction_tmp, isStop):
 
         # agent_next_link_direction = None
         # close all other directions
-        for [link_id, _] in alternative_links:
+        for [link_id, _, angle_tmp] in alternative_links:
             if link_id != agent_next_link:
                 # print('close {}'.format(link_id))
                 link = network.links[link_id]
@@ -621,9 +604,10 @@ def test_each_grpc(t, data, config, update_data, logger, direction_tmp, isStop):
 
         routing_status = network.agents[agent_id].get_path(t, g=network.g)
         network.agents[agent_id].find_next_link(node2link_dict=network.node2link_dict)
+        # logger.info("agent' s route: {}".format(network.agents[agent_id].route))
         # print(agent_next_link, network.agents[0].next_link)
 
-        for [link_id, _] in alternative_links:
+        for [link_id, _, angle_tmp] in alternative_links:
             if link_id != agent_next_link:
                 link = network.links[link_id]
                 network.g.update_edge(link.start_nid, link.end_nid, c_double(link.fft))
@@ -669,25 +653,6 @@ def test_each_grpc(t, data, config, update_data, logger, direction_tmp, isStop):
     else:
         return data, config, update_data, None, isStop, ""
 
-
-def test_main():
-    logger = server_zmq.get_logger("test_main")
-    data, config, update_data = initialize()
-    # global output
-    # output = "lala"
-    # output = queue.Queue()
-    points_df = extra_link_info(data)
-
-    checked_links = []
-    old_link_id = None
-
-    for t in range(0, 1001):
-
-        data, config, update_data, output, old_link_id, image_position = test_each(t, data, config, update_data, logger, old_link_id, points_df)
-        # gl.set_value("output", output)
-        # print(output)
-        logger.info(output)
-        print(image_position)
 
 def calculate_initial_compass_bearing(pointA, pointB):
     """
@@ -775,10 +740,6 @@ def extra_link_info(data):
     print("extracting points complete")
     return points_df
 
-if __name__=="__main__":
-    gl._init()
-    test_main()
-    # a = calculate_perpen_point(2,2,1,1,3,4)
-    # print(a)
+
 
 

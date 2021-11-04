@@ -516,28 +516,32 @@ class Agent:
         self.next_link_end_nid = None ### next link end
 
     def get_path(self, t, g=None):
-        sp = g.dijkstra(self.current_link_end_nid, self.destin_nid)
-        sp_dist = sp.distance(self.destin_nid)
-        if (t==0) and (sp_dist > 1e8):
-            sp.clear()
-            # self.route = {self.current_link_start_nid: self.current_link_end_nid}
+        if self.current_link_end_nid == self.destin_nid:
             self.route = {}
-            # self.furthest_nid = self.current_link_end_nid
-            self.status = 'shelter_p'
-            # print(self.agent_id, self.current_link_start_nid, self.current_link_end_nid)
-        elif (t>0) and (sp_dist>1e8):
-            sp.clear()
-            pass
+            self.route[self.current_link_start_nid] = self.current_link_end_nid
         else:
-            self.route_distance = sp_dist
-            sp_route = sp.route(self.destin_nid)
-            ### create a path. Order only preserved in Python 3.7+. Do not rely on.
-            # self.route = {self.current_link_start_nid: self.current_link_end_nid}
-            self.route = {}
-            for (start_nid, end_nid) in sp_route:
-                self.route[start_nid] = end_nid
-            sp.clear()
-    
+            sp = g.dijkstra(self.current_link_end_nid, self.destin_nid)
+            sp_dist = sp.distance(self.destin_nid)
+            if (t==0) and (sp_dist > 1e8):
+                sp.clear()
+                # self.route = {self.current_link_start_nid: self.current_link_end_nid}
+                self.route = {}
+                # self.furthest_nid = self.current_link_end_nid
+                self.status = 'shelter_p'
+                # print(self.agent_id, self.current_link_start_nid, self.current_link_end_nid)
+            elif (t>0) and (sp_dist>1e8):
+                sp.clear()
+                pass
+            else:
+                self.route_distance = sp_dist
+                sp_route = sp.route(self.destin_nid)
+                ### create a path. Order only preserved in Python 3.7+. Do not rely on.
+                # self.route = {self.current_link_start_nid: self.current_link_end_nid}
+                self.route = {}
+                for (start_nid, end_nid) in sp_route:
+                    self.route[start_nid] = end_nid
+                sp.clear()
+
     def get_partial_path(self, t, g=None, link_id_dict=None, node2link_dict=None):
 
         # for k, v in self.route.items():
@@ -623,6 +627,8 @@ class Agent:
             self.next_link_end_nid = self.route[self.current_link_end_nid]
             # self.next_link_end_nid = self.route.pop(self.current_link_end_nid)
             self.next_link = node2link_dict[ (self.current_link_end_nid, self.next_link_end_nid) ]
+            if self.next_link == None:
+                print("next_link is none")
         except KeyError:
             self.next_link_end_nid = None
             self.next_link = None
