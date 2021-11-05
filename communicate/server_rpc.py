@@ -11,7 +11,6 @@ parser.add_argument('--root_dir', metavar='N', type=str, default="../",
 args = parser.parse_args()
 root_directory = os.path.join(os.getcwd(),args.root_dir)
 sys.path.insert(0, args.root_dir)
-
 import grpc
 from server import Drive_pb2
 from server import Drive_pb2_grpc
