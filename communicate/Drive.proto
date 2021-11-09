@@ -7,7 +7,6 @@ service Drive{
     rpc DriverStop(Direction) returns (StopInfo){}
     rpc ChangeImage(Direction) returns (ChangeInfo){}
     rpc SendSEPosition(BriefPoints) returns(SEInfo){}
-    rpc SendEnd(EndInfo) returns(EndInfo){}
 }
 
 message Direction{
@@ -38,8 +37,5 @@ message ChangeInfo{
     int32 t=2;
 }
 message SEInfo{
-    string state = 1;
-}
-message EndInfo{
     string state = 1;
 }
