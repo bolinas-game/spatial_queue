@@ -37,6 +37,8 @@ def get_logger(name):
     logging.getLogger(name).addHandler(console)
     return logging.getLogger(name)
 
+logger = get_logger('root')
+
 
 isStop_tmp = False
 new_find = False
@@ -118,11 +120,12 @@ class Drive(Drive_pb2_grpc.Drive):
             return Drive_pb2.ChangeInfo(image=None, t=-1)
 
     def SendSEPosition(self, request, context):
-        global start_nid, end_nid, calculate_time
+        global start_nid, end_nid, calculate_time, data, config, update_data
+        data, config, update_data = test_game.initialize(logger)
         agent_id = 447
         startPoint = (request.x1, request.y1)
         endPoint = (request.x2, request.y2)
-        logger.info("get start and end points")
+        logger.info("get start and end points: {}, {}".format(startPoint, endPoint))
         nodes_df = pd.read_csv(os.path.join(args.root_dir,"projects/bolinas/network_inputs/bolinas_nodes_sim.csv"))
         nodes_df = gpd.GeoDataFrame(nodes_df, crs='epsg:4326', geometry=[Point(x, y) for (x, y) in zip(nodes_df.lon, nodes_df.lat)]).to_crs('epsg:26910')
         nodes_df['x'] = nodes_df['geometry'].apply(lambda x: x.x)
@@ -144,25 +147,31 @@ class Drive(Drive_pb2_grpc.Drive):
         logger.info("agent' s departure time: {}".format(1))
         return Drive_pb2.SEInfo(state = "success")
 
+    def SendEnd(self, request, context):
+        end_info = request.state
+        logger.info("game end.")
+        return Drive_pb2.EndInfo(state = "server ends")
+
+
+
 
 
 
 def serve():
-    global data,config,update_data
     server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
     Drive_pb2_grpc.add_DriveServicer_to_server(Drive(), server)
     server.add_insecure_port('[::]:50051')
-    data, config, update_data = test_game.initialize(logger)
     server.start()
     server.wait_for_termination()
 
 
-
-if __name__ == "__main__":
-    logger = get_logger('root')
+def start():
     player_file.write("t,link_id,car_id,x,y,heading,lat,lon")
     serve()
     image_file = open("../output/image_path.txt", "w", encoding="utf-8")
     for i in image_files:
         image_file.write(i)
+
+if __name__ == "__main__":
+    start()
 

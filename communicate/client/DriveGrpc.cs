@@ -57,6 +57,8 @@ namespace Protodrive {
     static readonly grpc::Marshaller<global::Protodrive.BriefPoints> __Marshaller_protodrive_BriefPoints = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Protodrive.BriefPoints.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Protodrive.SEInfo> __Marshaller_protodrive_SEInfo = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Protodrive.SEInfo.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::Protodrive.EndInfo> __Marshaller_protodrive_EndInfo = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Protodrive.EndInfo.Parser));
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::Protodrive.Direction, global::Protodrive.Point> __Method_GetPosition = new grpc::Method<global::Protodrive.Direction, global::Protodrive.Point>(
@@ -90,6 +92,14 @@ namespace Protodrive {
         __Marshaller_protodrive_BriefPoints,
         __Marshaller_protodrive_SEInfo);
 
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::Protodrive.EndInfo, global::Protodrive.EndInfo> __Method_SendEnd = new grpc::Method<global::Protodrive.EndInfo, global::Protodrive.EndInfo>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "SendEnd",
+        __Marshaller_protodrive_EndInfo,
+        __Marshaller_protodrive_EndInfo);
+
     /// <summary>Service descriptor</summary>
     public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
     {
@@ -120,6 +130,12 @@ namespace Protodrive {
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::Protodrive.SEInfo> SendSEPosition(global::Protodrive.BriefPoints request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::Protodrive.EndInfo> SendEnd(global::Protodrive.EndInfo request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -223,6 +239,26 @@ namespace Protodrive {
       {
         return CallInvoker.AsyncUnaryCall(__Method_SendSEPosition, null, options, request);
       }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Protodrive.EndInfo SendEnd(global::Protodrive.EndInfo request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return SendEnd(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::Protodrive.EndInfo SendEnd(global::Protodrive.EndInfo request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_SendEnd, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Protodrive.EndInfo> SendEndAsync(global::Protodrive.EndInfo request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return SendEndAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::Protodrive.EndInfo> SendEndAsync(global::Protodrive.EndInfo request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_SendEnd, null, options, request);
+      }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       protected override DriveClient NewInstance(ClientBaseConfiguration configuration)
@@ -240,7 +276,8 @@ namespace Protodrive {
           .AddMethod(__Method_GetPosition, serviceImpl.GetPosition)
           .AddMethod(__Method_DriverStop, serviceImpl.DriverStop)
           .AddMethod(__Method_ChangeImage, serviceImpl.ChangeImage)
-          .AddMethod(__Method_SendSEPosition, serviceImpl.SendSEPosition).Build();
+          .AddMethod(__Method_SendSEPosition, serviceImpl.SendSEPosition)
+          .AddMethod(__Method_SendEnd, serviceImpl.SendEnd).Build();
     }
 
     /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
@@ -254,6 +291,7 @@ namespace Protodrive {
       serviceBinder.AddMethod(__Method_DriverStop, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Protodrive.Direction, global::Protodrive.StopInfo>(serviceImpl.DriverStop));
       serviceBinder.AddMethod(__Method_ChangeImage, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Protodrive.Direction, global::Protodrive.ChangeInfo>(serviceImpl.ChangeImage));
       serviceBinder.AddMethod(__Method_SendSEPosition, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Protodrive.BriefPoints, global::Protodrive.SEInfo>(serviceImpl.SendSEPosition));
+      serviceBinder.AddMethod(__Method_SendEnd, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::Protodrive.EndInfo, global::Protodrive.EndInfo>(serviceImpl.SendEnd));
     }
 
   }

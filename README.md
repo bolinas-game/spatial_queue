@@ -27,3 +27,12 @@ Simulating traffic flow using spatial-queue-based model.
 
 ### Run the simulation
 `python dta_meso_[case_study_name].py`
+
+`docker run -it -w /game_server/spatial_queue -p 50051:50051 game_server`
+
+`python -m grpc_tools.protoc -Icommunicate --python_out=communicate/server --grpc_python_out=communicate/server communicate/Drive.proto`
+
+https://intl.cloud.tencent.com/document/product/1055/39057#test
+
+cd communicate
+protoc -I . --csharp_out=client --grpc_out=client --plugin=protoc-gen-grpc=grpc_csharp_plugin Drive.proto
