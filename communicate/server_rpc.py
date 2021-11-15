@@ -62,6 +62,9 @@ class Drive(Drive_pb2_grpc.Drive):
         global calculate_time, calculated_time
         direction = request.op
         unity_time = request.t
+        logger.info("unity time: {}".format(unity_time))
+        print("unity time: {}".format(unity_time))
+
         if calculate_time==None:
             calculate_time = unity_time
 
@@ -100,6 +103,7 @@ class Drive(Drive_pb2_grpc.Drive):
             logger.info("send veh info: id {},x {}, y {}, calculate_time {}".format(-2, -2, -2, int(calculate_time)-1))
             yield Drive_pb2.Point(id=str(-2), lon=-2, lat=-2, x=-2, y=-2, angle=-2, t=int(calculate_time)-1)
 
+
     def DriverStop(self, request, context):
         global calculated_time, calculate_time
         if calculated_time and calculate_time and (calculate_time - 1 == calculated_time):
@@ -108,6 +112,7 @@ class Drive(Drive_pb2_grpc.Drive):
             return Drive_pb2.StopInfo(isStop=isStop_tmp, t=calculated_time)
         else:
             return Drive_pb2.StopInfo(isStop=None, t=-1)
+
 
     def ChangeImage(self, request, context):
         global calculated_time, calculate_time, image_file
@@ -119,9 +124,10 @@ class Drive(Drive_pb2_grpc.Drive):
 
             return Drive_pb2.ChangeInfo(image=None, t=-1)
 
+
     def SendSEPosition(self, request, context):
-        global start_nid, end_nid, calculate_time, data, config, update_data
-        data, config, update_data = test_game.initialize(logger)
+        global start_nid, end_nid, calculate_time
+        calculate_time = None
         agent_id = 447
         startPoint = (request.x1, request.y1)
         endPoint = (request.x2, request.y2)
@@ -147,20 +153,23 @@ class Drive(Drive_pb2_grpc.Drive):
         logger.info("agent' s departure time: {}".format(1))
         return Drive_pb2.SEInfo(state = "success")
 
+
     def SendEnd(self, request, context):
+        global data, config, update_data, calculate_time, calculated_time
         end_info = request.state
         logger.info("game end.")
+        calculate_time = None
+        calculated_time = None
+        data, config, update_data = test_game.initialize(logger)
         return Drive_pb2.EndInfo(state = "server ends")
 
 
-
-
-
-
 def serve():
+    global data, config, update_data
     server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
     Drive_pb2_grpc.add_DriveServicer_to_server(Drive(), server)
     server.add_insecure_port('[::]:50051')
+    data, config, update_data = test_game.initialize(logger)
     server.start()
     server.wait_for_termination()
 
