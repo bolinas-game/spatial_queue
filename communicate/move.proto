@@ -1,0 +1,68 @@
+syntax = "proto3";
+
+package protomove;
+
+message Direction{
+    string op = 1;
+    int32 t = 2;
+}
+
+message BriefPoints{
+    float x1 = 1;
+    float y1 = 2;
+    float x2 = 3;
+    float y2 = 4;
+}
+
+
+message Point{
+    string id = 1;
+    float lon = 2;
+    float lat = 3;
+    float x = 4;
+    float y = 5;
+    float angle = 6;
+    int32 t=7;
+}
+
+message StopInfo{
+    bool isStop = 1;
+    int32 t=2;
+}
+message ChangeInfo{
+    string image = 1;
+    int32 t=2;
+}
+message CompleteInfo{
+    bool complete = 1;
+    int32 t=2;
+}
+
+message StreamRequest{
+    oneof stream_request{
+        Direction dir_info = 1;
+        BriefPoints se_info = 2;
+    }
+}
+
+message StreamResponse{
+    oneof stream_response{
+        Point point_info = 1;
+        StopInfo stop_info = 2;
+        ChangeInfo change_info = 3;
+        CompleteInfo complete_info = 4;
+        BriefPoints new_se_info = 5;
+    }
+}
+
+message Status{
+    string state = 1;
+}
+message End{
+    string state = 1;
+}
+
+service Move{
+    rpc GetPosition(stream StreamRequest) returns (stream StreamResponse){}
+    rpc UnSubscribe(End) returns (Status){}
+}
