@@ -27,6 +27,14 @@ home_dir = server_rpc.root_directory
 # sys.path.insert(0, home_dir+'/..')
 from sp import interface
 
+
+
+def get_distance(start, end):
+    x1, y1 = start
+    x2, y2 = end
+    d = pow(pow(x1-x2,2)+pow(y1-y2,2), 0.5)
+    return d
+
 class Network:
     def __init__(self):
         self.nodes = {}
@@ -37,14 +45,27 @@ class Network:
         self.agents = {}
         self.agents_stopped = {}
     
-    def dataframe_to_network(self, project_location=None, network_file_edges=None, network_file_nodes=None, cf_files = None, special_nodes=None, scen_nm=None):
-        
+    def dataframe_to_network(self,project_location=None, network_file_edges=None,
+                             network_file_nodes=None, cf_files = None, special_nodes=None, scen_nm=None,
+                             startPoint = None, endPoint = None, ):
+
+
         # nodes
         nodes_df = pd.read_csv(home_dir + network_file_nodes)
         nodes_df = gpd.GeoDataFrame(nodes_df, crs='epsg:4326', geometry=[Point(x, y) for (x, y) in zip(nodes_df.lon, nodes_df.lat)]).to_crs('epsg:26910')
         nodes_df['x'] = nodes_df['geometry'].apply(lambda x: x.x)
         nodes_df['y'] = nodes_df['geometry'].apply(lambda x: x.y)
         nodes_df = nodes_df[['nid', 'x', 'y', 'osmid']]
+        
+        #get start and end id
+        nodes_df['distance_start'] = nodes_df.apply(lambda x: get_distance(startPoint, (x["x"], x["y"])), axis=1)
+        nodes_df['distance_end'] = nodes_df.apply(lambda x: get_distance(endPoint, (x['x'], x["y"])), axis=1)
+        start_nid = int(nodes_df[nodes_df["distance_start"] == min(nodes_df["distance_start"])].iloc[0]["nid"])
+        end_nid = int(nodes_df[nodes_df["distance_end"] == min(nodes_df["distance_end"])].iloc[0]["nid"])
+
+        start_point = (nodes_df["x"][start_nid], nodes_df["y"][start_nid])
+        end_point = (nodes_df["x"][end_nid], nodes_df["y"][end_nid])
+
         # edges
         links_df = pd.read_csv(home_dir + network_file_edges)
         if len(cf_files)>0:
@@ -57,12 +78,6 @@ class Network:
 
         links_df['maxmph'] = np.where(links_df['lanes']==0, 0.00000001, links_df['maxmph'])
         links_df['fft'] = links_df['length']/links_df['maxmph']*2.237
-        # links_df = links_df.iloc[0:1]
-        # set the fft of the longer one in double links to infinite
-        # links_df = links_df.sort_values(by='fft', ascending=True)
-        # links_df['duplicated'] = links_df[['nid_s', 'nid_e']].duplicated()
-        # links_df['fft'] = np.where(links_df['duplicated'], 1e8, links_df['fft'])
-        # links_df = links_df.sort_values(by='eid', ascending=True)
         links_df['capacity'] = 1900*links_df['lanes']
         links_df['capacity'] = np.where(links_df['capacity']==0, 0.01, links_df['capacity'])
         # print(links_df['geometry'].iloc[0])
@@ -159,6 +174,8 @@ class Network:
                     pass
             else:
                 self.node2link_dict[(real_link.start_nid, real_link.end_nid)] = real_link.link_id
+        return start_nid, end_nid, start_point, end_point
+
 
     def add_connectivity(self):
         for link_id, link in self.links.items():
@@ -254,7 +271,9 @@ class Node:
             # agent_id_dict[agent_id].find_next_link(node2link_dict=node2link_dict)
             agent_outgoing_link = agent_id_dict[agent_id].next_link
             non_conflict_go_vehicles.append([agent_id, agent_incoming_link, agent_outgoing_link])
-            if agent_outgoing_link is None: pass # current link end is destination/shelter
+            if agent_outgoing_link is None:
+            # current link end is destination/shelter
+                    pass
             else:
                 try:
                     turning_angle = self.incoming_links[agent_incoming_link][agent_outgoing_link]
@@ -288,7 +307,8 @@ class Node:
             agent_incoming_link = opposite_go_link.link_id
             agent_outgoing_link = agent_id_dict[agent_id].next_link
             # opposite direction will not have more left turns
-            if agent_outgoing_link is None: pass
+            if agent_outgoing_link is None:
+                pass
             else:
                 turning_angle = self.incoming_links[agent_incoming_link][agent_outgoing_link]
                 if turning_angle>=50: continue
@@ -297,18 +317,20 @@ class Node:
         #     if a==79: print('go_veh', self.node_id, a, b, c, agent_id_dict[a].this_link)
         return non_conflict_go_vehicles
 
-    def run_node_model(self, t_now, node_id_dict=None, link_id_dict=None, agent_id_dict=None, node2link_dict=None, transfer_link_pairs=None, special_nodes=None,  driver_id=None, driver_next_link = None, isStop = None):
+    def run_node_model(self, t_now, node_id_dict=None, link_id_dict=None, agent_id_dict=None, node2link_dict=None, transfer_link_pairs=None, special_nodes=None,  driver_id=None, driver_next_link = None):
         go_vehicles = self.non_conflict_vehicles( t_now, link_id_dict=link_id_dict, agent_id_dict=agent_id_dict, node2link_dict=node2link_dict, special_nodes=special_nodes)
         # if self.node_id==8205: print(go_vehicles, '\n\n')
         node_move = 0
         node_move_link_pairs = []
+        get_end=False
 
         for [agent_id, agent_il_id, agent_ol_id] in go_vehicles:
             agent = agent_id_dict[agent_id]
             travel_time = (t_now, t_now - agent.current_link_enter_time)
             agent_inflow_link = link_id_dict[agent_il_id]
 
-            if agent_id==driver_id and agent_ol_id == driver_next_link and isStop:
+            if agent_id == driver_id and agent_ol_id == driver_next_link and driver_next_link!=None:
+
                 node_move_link_pairs.append((agent_il_id, agent_ol_id))
                 ### before move agent as it uses the old agent.cl_enter_time
                 agent_inflow_link.total_vehicles_left += 1
@@ -331,6 +353,9 @@ class Node:
                     if self.node_id != agent.destin_nid:
                         print(agent_id, agent_il_id, agent_ol_id, agent.destin_nid, self.node_id, agent.status, agent.route)
                         sys.exit(0)
+                    else:
+                        get_end = True
+                        print("get destination")
 
                 # try: agent_outflow_link.remaining_storage_capacity
                 # except AttributeError: print(agent_id, agent_outflow_link, agent_inflow_link.link_id)
@@ -410,7 +435,7 @@ class Node:
         #     for [agent_id, agent_il_id, agent_ol_id] in go_vehicles:
         #         agent = agent_id_dict[agent_id]
         #         print(agent.route)
-        return node_move, node_move_link_pairs
+        return node_move, node_move_link_pairs, get_end
 
 class Link:
     def __init__(self, link_id, lanes, length, fft, capacity, link_type, start_nid, end_nid, geometry):
@@ -472,12 +497,7 @@ class Link:
         self.remaining_storage_capacity = self.storage_capacity - sum([agent_id_dict[agent_id].vehicle_length for agent_id in self.run_vehicles+self.queue_vehicles])
         self.remaining_inflow_capacity, self.remaining_outflow_capacity = self.capacity/3600, self.capacity/3600
         if (self.status in ['closed', 'burning_closed']): self.remaining_inflow_capacity = 0
-    
-    # def update_travel_time(self, t_now, link_time_lookback_freq=None, g=None, update_graph=False):
-    #     self.travel_time_list = [(t_rec, duration) for (t_rec, duration) in self.travel_time_list if (t_now-t_rec < link_time_lookback_freq)]
-    #     if len(self.travel_time_list) > 0:
-    #         self.travel_time = np.mean([dururation for (_, dururation) in self.travel_time_list])
-    #         if update_graph: g.update_edge(self.start_nid, self.end_nid, c_double(self.travel_time))
+
    
     def update_travel_time_by_queue_length(self, g):
         if (self.status in ['closed', 'burning_closed']) or (self.link_type == 'v'): return

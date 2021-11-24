@@ -28,6 +28,7 @@ def extract_vehicle_locations(network, t, agent_id=None, logger = None):
     transformer = Transformer.from_crs( "epsg:26910", "epsg:4326")
 
     is_stop = False
+    # get_end = False
     trace_agent = network.agents[agent_id]
     agent_link = network.node2link_dict[(trace_agent.current_link_start_nid, trace_agent.current_link_end_nid)]
     select_node_id = trace_agent.current_link_end_nid
@@ -55,6 +56,8 @@ def extract_vehicle_locations(network, t, agent_id=None, logger = None):
         queue_end = link_length - 4
         for q_index_tmp, q_veh_id in enumerate(link.queue_vehicles):
             q_veh_loc = queue_end
+            # if (q_veh_id == agent_id) and (trace_agent.destin_nid == trace_agent.current_link_end_nid):
+                # get_end = True
             queue_end = max(queue_end-8, 4)
             q_veh_coord_1 = link_geometry.interpolate(q_veh_loc/link_length-0.001, normalized=True)
             q_veh_coord_2 = link_geometry.interpolate(q_veh_loc/link_length+0.001, normalized=True)
@@ -69,6 +72,8 @@ def extract_vehicle_locations(network, t, agent_id=None, logger = None):
             r_veh_current_link_enter_time = network.agents[r_veh_id].current_link_enter_time
             if link_length*(t-r_veh_current_link_enter_time)/link_fft>queue_end:
                 r_veh_loc = queue_end
+                # if (r_veh_id == agent_id) and (trace_agent.destin_nid == trace_agent.current_link_end_nid) and (queue_end == link_length-4):
+                #     get_end = True
                 queue_end = max(queue_end-8, 0)
             else:
                 r_veh_loc = link_length*(t-r_veh_current_link_enter_time)/link_fft
@@ -87,37 +92,17 @@ def extract_vehicle_locations(network, t, agent_id=None, logger = None):
             # elif (not run_index_tmp) and q_veh_id ==agent_id and q_veh_loc<8:
             #     is_stop=True
             if len(link.queue_vehicles)>0 and agent_id == link.queue_vehicles[0]:
-                logger.info("queue_vehicles: {}, in the first of queue, need stop!".format(link.queue_vehicles))
+                logger.info("t: {}, queue_vehicles: {}, in the first of queue, need stop!".
+                            format(t ,link.queue_vehicles))
                 is_stop=True
-            # elif len(link.queue_vehicles)==0 and len(link.run_vehicles)>0 and agent_id == link.run_vehicles[0]:
-            #     logger.info("queue_vehicles is 0, run_vehicles is {} in the first of queue, need stop!".format(link.queue_vehicles, link.run_vehicles))
-            #     is_stop=True
             else:
                 is_stop = False
 
 
-    '''
-
-    veh_df = pd.DataFrame(queue_vehicle_position + run_vehicle_position, columns=['veh_id', 'status', 'link_id', 'lon_offset_utm', 'lat_offset_utm', 'angle'])
-
-    # veh_df = pd.DataFrame(queue_vehicle_position + run_vehicle_position, columns=['veh_id', 'status', 'link_id', 'lon_offset_utm', 'lat_offset_utm', 'dir_x', 'dir_y'])
-    veh_df['lon_offset_sumo'] = veh_df['lon_offset_utm']-525331.68
-    veh_df['lat_offset_sumo'] = veh_df['lat_offset_utm']-4194202.74
-
-    # print(veh_df.iloc[0])
-    # print(veh_df['lon_offset_utm'].iloc[0], veh_df['lon_offset_utm'].iloc[0]-518570.38)
-    # veh_df.to_csv(simulation_outputs+'/veh_loc_interpolated/veh_loc_t{}.csv'.format(t), index=False)
-    veh_gdf = gpd.GeoDataFrame(veh_df, crs='epsg:32610', geometry=gpd.points_from_xy(veh_df.lon_offset_utm, veh_df.lat_offset_utm))
-    # veh_gdf.loc[veh_gdf['veh_id']==game_veh_id, 'status'] = 'g'
-
-        
-    return veh_gdf
-    '''
-
     whole_position=[]
     whole_veh = queue_vehicle_position+run_vehicle_position
     whole_vehs = pd.DataFrame(whole_veh, columns=['veh_id', 'lon_offset_utm', 'lat_offset_utm','lon', 'lat', 'angle', 'link_id'])
-    whole_vehs["t"] = t
+    whole_vehs["t"] = int(t)
 
     if len(whole_veh)>0:
         whole_veh.sort(key=keyfun)
