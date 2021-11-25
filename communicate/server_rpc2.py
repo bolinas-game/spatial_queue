@@ -4,18 +4,18 @@ import sys
 import os
 import argparse
 import grpc
-from server import move_pb2
-from server import move_pb2_grpc
-from game import test_game
-from threading import RLock
-
 parser = argparse.ArgumentParser(description='Process some integers.')
 parser.add_argument('--root_dir', metavar='N', type=str, default="../",
                     help='path for root_dir')
-
 args = parser.parse_args()
-root_directory = os.path.join(os.getcwd(),args.root_dir)
+root_directory = os.path.join(os.getcwd(), args.root_dir)
 sys.path.insert(0, args.root_dir)
+
+from game import test_game
+from threading import RLock
+from server import move_pb2
+from server import move_pb2_grpc
+
 
 def get_logger(name):
     logging.basicConfig(filename='server.log', filemode='w',

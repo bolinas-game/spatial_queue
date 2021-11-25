@@ -20,18 +20,18 @@ from shapely.wkt import loads
 
 from model.queue_class import Network
 import game.extract_vehicle_locations as extract_vehicle_location
-from communicate import server_rpc
+from communicate import server_rpc2
 print(sys.path)
 import ast
 
-root_dir = server_rpc.root_directory
+root_dir = server_rpc2.root_directory
 links_list = pd.read_csv(os.path.join(root_dir ,'split_link/links_new.csv'))
 
 class Trasport():
     def __init__(self, origin, destination):
         self.start = origin
         self.end = destination
-        self.logger = server_rpc.logger
+        self.logger = server_rpc2.logger
         self.random_seed = 0
         self.fire_id = '1'  # '1', '2', '3'
         self.comm_id = '1'  # '1', '2', '3'

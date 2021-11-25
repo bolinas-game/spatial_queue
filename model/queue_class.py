@@ -17,12 +17,12 @@ from shapely.geometry import Point
 from shapely.geometry import LineString
 # for coordinate transformation
 from shapely.ops import transform
-from communicate import server_rpc
+from communicate import server_rpc2
 import pyproj
 geo2prj = pyproj.Transformer.from_proj(pyproj.Proj('epsg:4326'), pyproj.Proj('epsg:3857'), always_xy=True)
 ### dir
 # home_dir = '/Users/wangyanglan/Public/Project/spatial_queue' # os.environ['HOME']+'/spatial_queue'
-home_dir = server_rpc.root_directory
+home_dir = server_rpc2.root_directory
 ### user
 # sys.path.insert(0, home_dir+'/..')
 from sp import interface
