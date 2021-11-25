@@ -31,5 +31,6 @@ RUN cd spatial_queue \
     && pip3 install -r requirements.txt
 
 WORKDIR /game_server/spatial_queue
-EXPOSE 50051/tcp
-CMD ["python3", "communicate/server_rpc.py", "--root_dir", "./"]
+
+# EXPOSE 50051/tcp
+CMD ["python3", "communicate/server_rpc2.py", "--root_dir", "./"]
