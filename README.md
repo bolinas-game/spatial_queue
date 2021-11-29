@@ -46,3 +46,4 @@ We also write the dockerfile for this repository, you can build image by using D
 
 ## 2. deploy traffic model into google cloud.
 
+follow the tutorial in [`google cloud`](https://cloud.google.com/endpoints/docs/grpc/get-started-compute-engine-docker-espv2) 
