@@ -33,7 +33,7 @@ Grpc is easy to use. But I did not find any tutorials or information in python-g
 different clients, (Go-grpc has). However, in our scenario, we must distinguish between different clients, because 
 each client must communicate with traffic model every timestamp to get the updated position. If server cannot distinguish 
 them, they cannot send correct position info to correct client. I read some answers of relevant StackOverflow questions, and 
-find the solution, the details are shown in one
+write one solution by myself, the details are shown in one
 [`post`](https://stackoverflow.com/questions/70044862/how-to-make-each-client-get-their-state-if-there-is-class-instance-in-grpc-pytho) 
 in StackOverflow. If you have any other better solutions, feel free to tell me.
 
