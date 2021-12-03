@@ -50,4 +50,19 @@ We also write the dockerfile for this repository, you can build image by using D
 
 ## 2. deploy traffic model into google cloud.
 
-follow the tutorial in [`google cloud`](https://cloud.google.com/endpoints/docs/grpc/get-started-compute-engine-docker-espv2) 
+Google Cloud Endpoints works with Extensible Service Proxy(ESP) or the Extensible Service Proxy V2(ESP V2) to provide API 
+management.
+
+With Endpoints for gRPC, we can use the API management capabilities of Endpoints to add API console, monitoring, 
+authentication or more to gRPC services. We can even change RESTful JSON over HTTP to gRPC requests, which gives
+us more flexibility to integrate with other systems. But in our scenario, both clients and servers use gRPC, there is not need to change the data format.
+
+
+![Image from Google Cloud for better explaination.](endpoints.jpg)
+
+This image is downloaded in Google Cloud for better understanding.
+
+
+
+After configuring and deploying the Endpoints, we can deploy the API and ESPv2 on the Compute Engine VM. 
+For more detailed info, follow the tutorial in [`google cloud`](https://cloud.google.com/endpoints/docs/grpc/get-started-compute-engine-docker-espv2) 
