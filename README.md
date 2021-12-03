@@ -39,7 +39,7 @@ in StackOverflow. If you have any other better solutions, feel free to tell me.
 
 The communication process between client and server can be expressed by the image as followed:
 
-![](communication_image.png)
+![communication image](communication_image.png)
 
 We also write the dockerfile for this repository, you can build image by using Dockerfile in this repository or pull from docker hub
 `docker pull yanglan/game-server:1.0`.
