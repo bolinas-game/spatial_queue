@@ -5,7 +5,7 @@ from [`Spatial Queue Simulator`](https://github.com/cb-cities/spatial_queue) dev
 this spatial-queue-based model, you can go to algorithm [`repository`](https://github.com/cb-cities/spatial_queue). If you just want
 it to run without knowing the detail, you should build the dependency Shortest path [`sp`](https://github.com/cb-cities/sp).
 
-[![Watch the video](Images/screenshoot.png)](https://www.youtube.com/watch?v=jLDZ-n4n4R4Y)
+[![Watch the video](Images/screenshoot1.png)](https://www.youtube.com/watch?v=jLDZ-n4n4R4Y)
 
 In README.md, We mainly explain three parts, including:
 
