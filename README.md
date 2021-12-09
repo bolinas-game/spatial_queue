@@ -11,6 +11,7 @@ In README.md, We mainly explain three parts, including:
 
 1. how to realize the communication between unity game and traffic model;
 2. how to deploy traffic model into google cloud.
+3. Some details in game design
 
 ## 1. Realize the Communication
 
@@ -24,7 +25,8 @@ server interface by command:
 
 `python -m grpc_tools.protoc -Icommunicate --python_out=communicate/server --grpc_python_out=communicate/server communicate/Drive.proto`
 
-The c# unity plugin can be downloaded at this [`link`](https://intl.cloud.tencent.com/document/product/1055/39057#test) first, then generate c# client interface by command:
+The c# unity plugin can be downloaded at this [`link`](https://intl.cloud.tencent.com/document/product/1055/39057#test) first(because it's hard
+to find download link, I just provide it), then generate c# client interface by command:
 
 `cd communicate`
 
@@ -49,7 +51,7 @@ We also write the dockerfile for this repository, you can build image by using D
 
 `docker run -it -p 50051:50051 game_server`
 
-## 2. deploy traffic model into google cloud.
+## 2. Deploy traffic model into google cloud.
 
 Google Cloud Endpoints works with Extensible Service Proxy(ESP) or the Extensible Service Proxy V2(ESP V2) to provide API 
 management.
@@ -61,9 +63,19 @@ us more flexibility to integrate with other systems. But in our scenario, both c
 
 ![Image from Google Cloud for better explaination.](Images/endpoints.jpg)
 
-This image is downloaded in Google Cloud for better understanding.
-
+This image is downloaded in Google Cloud for better understanding the role of Endpoints.
 
 
 After configuring and deploying the Endpoints, we can deploy the API and ESPv2 on the Compute Engine VM. 
 For more detailed info, follow the tutorial in [`google cloud`](https://cloud.google.com/endpoints/docs/grpc/get-started-compute-engine-docker-espv2) 
+
+## 3. Design of game
+
+I showed the video of playing our fire evacuation game, and the built game will be published later to let users play. For the game, first
+we need to create simply 3d model to present bolinas' s different types of terrain, traffic network structure and vehicles' movement. We
+don' t spend too much time building the detailed bolinas 3d model, which means more work in art area and may be more suitable 
+for commercial team. 
+
+However, we also want to provide realistic feeling to players who are also local residents mostly. Therefore, we downloaded bolinas
+streetview from google and want to apply some image synthesis work to add fire effects and real-time vehicle information to raw 
+image. This part is also the direction of later improvement. We want to realize realistic and automatic image synthesis finally.
