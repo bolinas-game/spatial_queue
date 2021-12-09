@@ -5,6 +5,7 @@ from [`Spatial Queue Simulator`](https://github.com/cb-cities/spatial_queue) dev
 this spatial-queue-based model, you can go to algorithm [`repository`](https://github.com/cb-cities/spatial_queue). If you just want
 it to run without knowing the detail, you should build the dependency Shortest path [`sp`](https://github.com/cb-cities/sp).
 
+[![Watch the video](Images/screenshoot.png)](https://www.youtube.com/watch?v=jLDZ-n4n4R4Y)
 
 In README.md, We mainly explain three parts, including:
 
@@ -39,7 +40,7 @@ in StackOverflow. If you have any other better solutions, feel free to tell me.
 
 The communication process between client and server can be expressed by the image as followed:
 
-![communication image](communication_image.png)
+![communication image](Images/communication_image.png)
 
 We also write the dockerfile for this repository, you can build image by using Dockerfile in this repository or pull from docker hub
 `docker pull yanglan/game-server:1.0`.
@@ -58,7 +59,7 @@ authentication or more to gRPC services. We can even change RESTful JSON over HT
 us more flexibility to integrate with other systems. But in our scenario, both clients and servers use gRPC, there is not need to change the data format.
 
 
-![Image from Google Cloud for better explaination.](endpoints.jpg)
+![Image from Google Cloud for better explaination.](Images/endpoints.jpg)
 
 This image is downloaded in Google Cloud for better understanding.
 
