@@ -79,3 +79,6 @@ for commercial team.
 However, we also want to provide realistic feeling to players who are also local residents mostly. Therefore, we downloaded bolinas
 streetview from google and want to apply some image synthesis work to add fire effects and real-time vehicle information to raw 
 image. This part is also the direction of later improvement. We want to realize realistic and automatic image synthesis finally.
+
+Finally, Thanks for advice from Professor Kenichi Soga, Professor Louise Comfort, Bingyu, Paola, and Kecheng.
+ 
